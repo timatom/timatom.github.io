@@ -1,4 +1,4 @@
-layout: sidebar
+layout: stacked
 style: light
 
 plugins:
@@ -47,14 +47,23 @@ projects:
   # youtube: your_username
 
 topics:
-  - name: CSS
-    web_url: https://github.com/topics/css
+  - name: Machine Learning
+    web_url: https://github.com/topics/machine-learning
     image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/css/css.png
 
-  - name: Web design
+  - name: Deep Learning
+  web_url: https://github.com/topics/deep-learning
+  image_url: https://user-images.githubusercontent.com/46494899/71755568-2bcc5580-2e59-11ea-9f64-0716e4204ddb.png
 
-  - name: Sass
-    web_url: https://github.com/topics/sass
-    image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/sass/sass.png
+  - name: Artificial Intelligence
+  web_url: https://github.com/topics/ai
+  image_url: https://user-images.githubusercontent.com/46494899/71755484-d09a6300-2e58-11ea-890c-2242cd8923bb.png
+
+  - name: Computational Neural Science
+  image_url: https://user-images.githubusercontent.com/46494899/71755967-4c95aa80-2e5b-11ea-8c1b-7fde9ebd6257.png
+
+  - name: TensorFlow
+    web_url: https://github.com/tensorflow/tensorflow
+    image_url: https://user-images.githubusercontent.com/46494899/71755135-4f8e9c00-2e57-11ea-9ea8-5d9ee1440504.png
 
 theme: jekyll-theme-cayman
