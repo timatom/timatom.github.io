@@ -1,75 +1,85 @@
-layout: stacked
-style: light
+# SITE CONFIGURATION
+baseurl: "/type-theme"
+url: "https://rohanchandra.github.io/"
 
-plugins:
-  - jekyll-octicons
-  - jekyll-github-metadata
-  - jemoji
+# THEME-SPECIFIC CONFIGURATION
+theme_settings:
+  # Meta
+  title: Type Theme
+  avatar: assets/img/avatar.png
+  favicon: assets/favicon.ico
+  gravatar: # Email MD5 hash
+  description: "A website with blog posts and pages" # used by search engines
 
-permalink: /:year/:month/:day/:title/
+  # Header and footer text
+  header_text: >
+     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
-defaults:
-  -
-    scope:
-      path: "" # an empty string here means all files in the project
-      type: "posts"
-    values:
-      layout: "post"
+     <p>Remove all header text in <code>_config.yml</code> to disable this feature.</p>
+  header_text_feature_image:
+  footer_text: >
+   Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/rohanchandra/type-theme">Type Theme</a>
 
-projects:
-  sort_by: pushed
-  # sort_by options:
-  #   - pushed
-  #   - stars
-  limit: 9
-  exclude:
-    archived: false
-    forks: true
-    projects:
-    # - repo-name
+  # Icons
+  rss: false
+  email_address: # Full email address, e.g. "sam@example.com"
+  behance:
+  bitbucket:
+  dribbble:
+  facebook:
+  flickr:
+  gitlab:
+  github: "rohanchandra/type-theme"
+  gitter:
+  google_plus:
+  instagram:
+  linkedin:  # Full URL
+  pinterest:
+  reddit:
+  soundcloud:
+  stack_exchange:  # Full URL
+  steam:
+  tumblr:
+  twitter:
+  wordpress:
+  youtube:
 
-# social_media:
-  # behance: your_username
-  # dribbble: your_username
-  # facebook: your_username
-  # hackerrank: your_username
-  # instagram: your_username
-  # keybase: your_username
-  # linkedin: your_username
-  # mastodon: your_username
-  # medium: your_username
-  # stackoverflow: your_user_id
-  # telegram: your_username
-  # twitter: your_username
-  # unsplash: your_username
-  # vk: your_username
-  # website: http://your_website_url
-  # youtube: your_username
+  # Scripts
+  google_analytics: # Tracking ID, e.g. "UA-000000-01"
+  disqus_shortname:
+  katex: true # Enable if using math markup
+  search: false # Enable the search feature
 
-topics:
-  - name: Machine Learning
-    web_url: https://github.com/topics/machine-learning
-    image_url: https://user-images.githubusercontent.com/46494899/71756571-86b47b80-2e5e-11ea-8ac5-4a5202854fce.png
+  # Localization strings
+  str_follow_on: "Follow on"
+  str_rss_follow: "Follow RSS feed"
+  str_email: "Email"
+  str_next_post: "Next post"
+  str_previous_post: "Previous post"
+  str_next_page: "Next"
+  str_previous_page: "Prev"
+  str_continue_reading: "Continue reading"
+  str_javascript_required_disqus: "Please enable JavaScript to view comments."
+  str_search_no_results: "No results found."
 
-  - name: Deep Learning
-    web_url: https://github.com/topics/deep-learning
-    image_url: https://user-images.githubusercontent.com/46494899/71755568-2bcc5580-2e59-11ea-9f64-0716e4204ddb.png
+  # Colours, typography and padding
+  # Open the "_sass > base" folder, and open "_variables.scss"
+  google_fonts: "Source+Sans+Pro:400,700,700italic,400italic"
 
-  - name: Artificial Intelligence
-    web_url: https://github.com/topics/ai
-    image_url: https://user-images.githubusercontent.com/46494899/71755484-d09a6300-2e58-11ea-890c-2242cd8923bb.png
+  # Post navigation
+  post_navigation: false
 
-  - name: Computational Neural Science
-    image_url: https://user-images.githubusercontent.com/46494899/71755967-4c95aa80-2e5b-11ea-8c1b-7fde9ebd6257.png
-    web_url: https://scholar.google.ca/scholar?hl=en&q=computational+neural+science&as_sdt=0
+# PAGINATION
+paginate: 5
+paginate_path: "blog/page:num"
 
-  - name: TensorFlow
-    web_url: https://github.com/tensorflow/tensorflow
-    image_url: https://user-images.githubusercontent.com/46494899/71755135-4f8e9c00-2e57-11ea-9ea8-5d9ee1440504.png
-
-  - name: Data Structures and Algorithms
-    web_url: https://github.com/topics/algorithm
-    image_url: https://user-images.githubusercontent.com/46494899/71756782-a26c5180-2e5f-11ea-951c-9d246fc90b6a.jpg
-
-
-theme: jekyll-theme-cayman
+# BUILD SETTINGS
+markdown: kramdown
+highlighter: rouge
+sass:
+  sass_dir: _sass
+  style: :compressed
+plugins: [jekyll-paginate]
+exclude:
+  - Gemfile
+  - Gemfile.lock
