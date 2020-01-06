@@ -1,6 +1,6 @@
 # SITE CONFIGURATION
 baseurl: ""
-url: "https://www.timothyrollings.com/"
+url: "//www.timothyrollings.com/"
 
 # THEME-SPECIFIC CONFIGURATION
 theme_settings:
