@@ -5,11 +5,11 @@ url: "//www.timothyrollings.com/"
 # THEME-SPECIFIC CONFIGURATION
 theme_settings:
   # Meta
-  title: Type Theme
-  avatar: 
+  title: Timothy Rollings' Blog
+  avatar:
   favicon: assets/favicon.ico
   gravatar: # Email MD5 hash
-  description: "A website with blog posts and pages" # used by search engines
+  description: "A website adressing topics of machine learning, deep learning, algorithms, and computational neuraoscience." # used by search engines
 
   # Header and footer text
   header_text: >
