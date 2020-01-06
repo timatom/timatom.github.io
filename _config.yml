@@ -7,15 +7,14 @@ theme_settings:
   # Meta
   title: Timothy Rollings' Blog
   avatar:
-  favicon: 
+  favicon:
   gravatar: # Email MD5 hash
   description: "A website adressing topics of machine learning, deep learning, algorithms, and computational neuraoscience." # used by search engines
 
   # Header and footer text
   header_text: >
-     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
-     <p>Remove all header text in <code>_config.yml</code> to disable this feature.</p>
+    <p><q cite="https://www.brainyquote.com/citation/quotes/geoffrey_hinton_875275">In the long run, curiosity-driven research just works better... Real breakthroughs come from people focusing on what they're excited about.</q></p>
+    <footer>—Geoffrey Hinton</footer>
   header_text_feature_image: "assets/img/warhols_neuron_img.png"
   footer_text: >
    Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/rohanchandra/type-theme">Type Theme</a>
