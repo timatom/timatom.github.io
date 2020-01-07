@@ -16,9 +16,7 @@ theme_settings:
     <p><q cite="https://www.brainyquote.com/citation/quotes/geoffrey_hinton_875275">In the long run, curiosity-driven research just works better... Real breakthroughs come from people focusing on what they're excited about.</q></p>
     <footer>—Geoffrey Hinton</footer>
   header_text_feature_image: "assets/img/warhols_neuron_img.png"
-  footer_text: >
-   Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/rohanchandra/type-theme">Type Theme</a>
-
+  footer_text: 
   # Icons
   rss: false
   email_address: # Full email address, e.g. "sam@example.com"
