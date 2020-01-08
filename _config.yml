@@ -19,7 +19,6 @@ theme_settings:
   footer_text:
   # Icons
   rss: false
-  email_address: TimothyRollings@gmail.com
   behance:
   bitbucket:
   dribbble:
@@ -31,6 +30,7 @@ theme_settings:
   google_plus:
   instagram:
   linkedin: "https://www.linkedin.com/in/timothyrollings"
+  email_address: TimothyRollings@gmail.com
   pinterest:
   reddit:
   soundcloud:
