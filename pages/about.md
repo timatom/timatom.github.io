@@ -1,8 +1,8 @@
 ---
 layout: page
 title: About
+feature-title: Under Construction
 permalink: /pages/about/
-feature-img: ""
 ---
 
 <b>This Page is Currently Under construction</b>

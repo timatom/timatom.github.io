@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Algorithms
+feature-title: Under Construction
 permalink: /pages/algorithms/
-feature-img: ""
 ---
 
 <b>This Page is Currently Under construction</b>

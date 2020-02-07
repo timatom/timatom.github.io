@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Tutorials
+feature-title: Under Construction
 permalink: /pages/tutorials/
-feature-img: ""
 ---
 
 <b>This Page is Currently Under construction</b>
