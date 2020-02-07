@@ -5,6 +5,6 @@ permalink: /pages/about/
 feature-img: ""
 ---
 
-# This Page is Currently Under construction
+<b>This Page is Currently Under construction</b>
 
 Awesome content coming back soon!
