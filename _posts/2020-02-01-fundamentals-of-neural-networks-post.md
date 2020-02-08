@@ -21,20 +21,20 @@ After finishing this tutorial, you should be able to code neural networks with a
 
 ### Table of Content
 
-1. Neural Networks and Neurons
-2. Applications of Neural Networks
+1. Neural Networks within Neuroscience
+2. Neural Networks within Machine Learning
 3. Logistic Regression in Neural Networks
 4. Basic Neural Networks
 5. Deep Neural Networks
 
-## Neural Networks and Neurons within Neuroscience
+## Neural Networks within Neuroscience
 
 Through the years, a lot has been brought up about neural networks in our machine learning community, especially related to deep learning.
 However, to truly understand where these insperations came from, we need to understand neural networks and neurons themselves.
 
 So what are neural networks? What are the neurons and synapsys that make them?
 
-## Applications of Neural Networks within Machine Learning
+## Neural Networks within Machine Learning
 
 Now that we understand how much is known about neural networks and their basic units in neuroscience, the next question is what applications have they had in computer science and machine learning. Also, what are their potential applications in the future?
 
