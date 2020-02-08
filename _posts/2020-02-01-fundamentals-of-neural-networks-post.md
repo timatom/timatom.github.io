@@ -23,9 +23,10 @@ After finishing this tutorial, you should be able to code neural networks with a
 
 1. Neural Networks within Neuroscience
 2. Neural Networks within Machine Learning
-3. Logistic Regression in Neural Networks
-4. Basic Neural Networks
-5. Deep Neural Networks
+3. Knowing Your Data
+4. The Basic Components in Neural Networks: Logistic Regression, Computational Graphs, and Backpropagation
+5. Basic Neural Networks
+6. Deep Neural Networks
 
 ## Neural Networks within Neuroscience
 
@@ -38,11 +39,17 @@ So what are neural networks? What are the neurons and synapsys that make them?
 
 Now that we understand how much is known about neural networks and their basic units in neuroscience, the next question is what applications have they had in computer science and machine learning. Also, what are their potential applications in the future?
 
-## Logistic Regression in Neural Networks
+## Knowing Your Data
 
-I'm sure you're ready to start understanding how our respresentations of neural networks have been created so far. The good news is that starts now.
+Before we get into the specifics of neural networks, we first need to understand the data we'll be giving them. While this section could really be made into its own tutorial, it's worth including here if even briefly. If you talk to a lot of data scientists, machine learning practitioniers, and researchers, you'll eventually hear one complain just how much time they have to put into making the data clean and structured for their models. I myself didn't think much about this until I started working with neural networks (and machine learning models in general) in the real world. It can actually get very complicated, and sometimes just not possible to deal with.
 
-## Basic Neural Networks
+Even at times, a lot of companies simply see "machine learning" and want to put any data they have through a model, with little idea how it will work (if at all), only to walk away dissapointed. Was it machine learning that failed? Typically not, there are plenty of Kaggle competition results to suggest just how well models can perform. Was it the data scientist or machine learning researcher who simply performed poorly? Could be, but then again it is only becoming easier and easier to make machine learning applications (AutoML being a good example). Then what could it be?! While it typically isn't one thing, it usually revolves around not understanding how real world data is cleaned and structured into model-ready data sets. Hopefully after this section, you'll know how to clean and structure real world data for your models (or if they even can be).
+
+## The Basic Components in Neural Networks: Logistic Regression, Computational Graphs, and Backpropagation
+
+I'm sure you're ready to start understanding how our respresentations of neural networks are created. The good news is that starts now.
+
+## Shallow Neural Networks
 
 Since we now understand the basic building blocks that make up our representation of neural network, we now turn to creating a full-fledged netowork. It'll be a basic network, but a neural network nonetheless.
 
