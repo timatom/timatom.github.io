@@ -31,7 +31,7 @@ properties can still give very different actions, simply based on how they are i
 
 ![Structure of neuron](https://upload.wikimedia.org/wikipedia/commons/a/a9/Complete_neuron_cell_diagram_en.svg)
 
-The above figure is a cellular diagram of a neuron, even though they can very quite drastically. Neurons in their most basic form consist of four morhphological regions: axons, dendrites, presynaptic terminals, and the cell's body (also called the soma). Together, these help the neuron generate signals and communicate with other brain cells.
+The above figure is a cellular diagram of a neuron, even though they can very quite drastically. Neurons can be divided into four morhphological regions: axons, dendrites, presynaptic terminals, and the cell's body (also called the soma). Together, these help the neuron generate signals and communicate with other brain cells.
 
 To get a better understanding, though, let's dig a little deeper into the details of these regions and what roles they play within [the structure of a neuron](https://www.khanacademy.org/science/biology/human-biology/neuron-nervous-system/v/anatomy-of-a-neuron):
 
