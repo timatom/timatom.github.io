@@ -25,7 +25,7 @@ After finishing this tutorial, you should be able to code neural networks with a
 Through the years, a lot has been brought up about neural networks in our machine learning community, especially related to deep learning.
 However, to truly understand where these insperations came from, we need to understand neural networks and neurons themselves.
 
-So what are neural networks, and the neurons and synapsys that make them? The human brain is a network of more than 100 billion individual
+So what are neural networks? What are the neurons and synapses that make them? The human brain is a network of more than 100 billion individual
 nerve cells interconnected in neural circuits that manefest into our perception of the world and guide our actions. Nerve cells with similar
 properties can still give very different actions, simply based on how they are interconnected. [principles of neural science, Ebook location 2477]
 Among all these cells, there are actually two fundamental cells that create the complicated networks of the brain: Neurons and glial cells.
