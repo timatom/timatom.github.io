@@ -27,8 +27,7 @@ However, to truly understand where these insperations came from, we need to unde
 
 So what are neural networks? What are the neurons and synapses that make them? The human brain is a network of more than 100 billion individual
 nerve cells interconnected in neural circuits that manefest into our perception of the world and guide our actions. Nerve cells with similar
-properties can still give very different actions, simply based on how they are interconnected. [principles of neural science, Ebook location 2477]
-Among all these cells, there are actually two fundamental cells that create the complicated networks of the brain: Neurons and glial cells.
+properties can still give very different actions, simply based on how they are interconnected. Among all these cells, there are actually two fundamental cells that create the complicated networks of the brain: Neurons and glial cells.
 These cells, while located in the brain, are also located in the spinal chord.
 
 ![Structure of neuron](https://upload.wikimedia.org/wikipedia/commons/a/a9/Complete_neuron_cell_diagram_en.svg)
