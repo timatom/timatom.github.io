@@ -17,7 +17,7 @@ After finishing this tutorial, you should be able to code neural networks with a
 2. Neural Networks within Machine Learning
 3. Knowing Your Data
 4. The Basic Components in Neural Networks: Logistic Regression, Computational Graphs, and Backpropagation
-5. Basic Neural Networks
+5. Shallow Neural Networks
 6. Deep Neural Networks
 
 ## Neural Networks within Neuroscience
