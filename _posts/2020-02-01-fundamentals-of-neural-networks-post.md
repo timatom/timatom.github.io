@@ -22,18 +22,18 @@ After finishing this tutorial, you should be able to code neural networks with a
 
 ## Neural Networks within Neuroscience
 
-Through the years, a lot has been brought up about neural networks in our machine learning community, especially related to deep learning.
+Through the years, a lot has been brought up about neural networks in the machine learning community, especially related to deep learning.
 However, to truly understand where these insperations came from, we need to understand neural networks and neurons themselves.
 
-So what are neural networks? What are the neurons and synapses that make them? The human brain is a network of more than 100 billion individual
-nerve cells interconnected in neural circuits that manefest into our perception of the world and guide our actions. Nerve cells with similar
-properties can still give very different actions, simply based on how they are interconnected. Among all these cells, there are actually two fundamental cells that create the complicated networks of the brain: Neurons and glial cells. These cells, while located in the brain, are also located in the spinal chord and make up our central nervous system.
+So what are neural networks? What are the neurons and synapses that make them?
 
 ![Structure of neuron](https://upload.wikimedia.org/wikipedia/commons/a/a9/Complete_neuron_cell_diagram_en.svg)
 
 The above figure is a cellular diagram of a neuron, even though they can very quite drastically. Neurons can be divided into four morhphological regions: axons, dendrites, presynaptic terminals, and the cell's body (also called the soma). Together, these help the neuron generate signals and communicate with other brain cells.
 
-To get a better understanding, though, let's dig a little deeper into the details of these regions and what roles they play within [the structure of a neuron](https://www.khanacademy.org/science/biology/human-biology/neuron-nervous-system/v/anatomy-of-a-neuron):
+It turns out the human brain is a network of more than 100 billion individual nerve cells interconnected in neural circuits that manefest into our perception of the world and guide our every action. Nerve cells with similar properties still give very different actions, simply based on how they are interconnected. Among all these cells, there are two fundamental cells that create the complicated networks in the brain: Neurons and glial cells. These cells, while located in the brain, are also located in the spinal chord and make up our central nervous system. While [glial cells](https://en.wikipedia.org/wiki/Glia) certainly play an important role in the brain, this tutorial will mainly focus on neurons due to their adoptation computer science. It may prove important in later versions of this tutorial to include them, but for now they will remain left out.
+
+To get a better understanding of neurons, though, let's dig a little deeper into the details of these regions and what roles they play within [the structure of a neuron](https://www.khanacademy.org/science/biology/human-biology/neuron-nervous-system/v/anatomy-of-a-neuron):
 
 ### Dendrites
 A [dendrite](https://en.wikipedia.org/wiki/Dendrite) genrally function as the reciever and processor of incoming signals into the neruon. The signals it
@@ -60,7 +60,10 @@ Along the neuron, they begin at what is called the [axon hillock](https://en.wik
 The presynaptic [axon terminals](https://en.wikipedia.org/wiki/Axon_terminal) are at the very end of the axon's branches (also called telodendria),
 which are used to send [neurotransmitters](https://en.wikipedia.org/wiki/Neurotransmitter) to other target cells (which could be the soma or dendrites of a target neuron, a [muscle cell](https://en.wikipedia.org/wiki/Myocyte), or a [gland cell](https://en.wikipedia.org/wiki/Gland)). They appear as tiny bulbous swellings at the end of many telodendria.
 
-I'll conlcude this section with a brief disclaimer. I by no means claim to be an expert in biology or neuroscience. I am simply a nerd who loves to learn about these things! If you want a deeper study into a lot of the fundamentals in neruoscience, I highly recomend "Principles of Neural Science" by Kandel, Schwartz, Jessell, Siegelbaum, and Hudspeth. I'm not mentioning this book for any marketing purposes, I just really like the book. A lot of what I'm covering in this section can be found in it, and much more interesting information.
+
+
+
+I'll conlcude this section with a brief disclaimer. I by no means claim to be an expert in biology or neuroscience. I am simply a nerd who loves to learn about these things! If you want a deeper study into a lot of the fundamentals in neruoscience, I highly recomend "Principles of Neural Science" by Kandel, Schwartz, Jessell, Siegelbaum, and Hudspeth. I'm not mentioning this book for any marketing purposes, I just really like the book. A lot of what I covered in this section can be found in it, and much more interesting information.
 
 ## Neural Networks within Machine Learning
 
