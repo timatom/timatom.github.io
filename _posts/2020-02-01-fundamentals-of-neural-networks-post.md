@@ -6,9 +6,9 @@ tags: [tutorials, neural networks, deep learning]
 
 ## Introduction
 
-This is a beginners tutorial to all things neural networks and deep learning. A lot of this is an accumulation of my own studies and exploration into neural networks, all compiled and digested here into a self contained study of them. My hopes are that this will cover both the theoretical and practical/experimental side of neural networks, as well as how both come together. Too many times theoretical and experimental material tend to lead readers away from each other. Hopefully, this will help releave some of the resulting blind spots we all find ourselves having to bridge.
+This is a beginner's tutorial for all things neural networks and deep learning. A lot of this is an accumulation of my own studies and exploration into neural networks, all compiled and digested here into a self contained study. My hopes are that this will cover both the theoretical and practical/experimental side of neural networks, as well as how both come together. Too many times theoretical and experimental material tend to lead readers away from each other. Hopefully, this will help relieve some of the resulting blind spots we all find ourselves having to bridge.
 
-Something to know now is that these tutorials will be long, but thorough. It wouldn't be surprising if they take a few days to go through. But once finished, you should have a good knowledge of the fundamentals in neural networks. I'll start by covering what neural networks and neurons are intuitively and how machine learning got it's insperation from them. Then, we'll move on to some applications they've been successfully used for. We'll also see in that section current room for future applications of NN's (Neural Networks). After we've covered what NN's intuitively are and their applications, we'll start to explore their fundamentals (logistic regression, shallow and deep NN's, forward/backward-propagation, associated mathematics, etc.).
+Something to know now is that these tutorials will be long, but thorough. It wouldn't be surprising if they take a few days to go through. But once finished, you should have a good knowledge of the fundamentals in neural networks. I'll start by covering neural networks and neurons within neuroscience and how machine learning got it's inspiration from them. Then, we'll move on to some applications they've been successfully used for. We'll also see in that section current room for future applications of NN's (Neural Networks). After we've covered what NN's intuitively are and their applications, we'll start to explore their fundamentals (logistic regression, shallow and deep NN's, forward/backward-propagation, associated mathematics, etc.).
 
 After finishing this tutorial, you should be able to code neural networks with a lot of knowledge as to how they work and their associated mathematics. You should have no problem moving on to further topics. Anyways, let's get started!
 
@@ -23,21 +23,20 @@ After finishing this tutorial, you should be able to code neural networks with a
 ## Neural Networks within Neuroscience
 
 Through the years, a lot has been brought up about neural networks in the machine learning community, especially related to deep learning.
-However, to truly understand where these insperations came from, we need to understand neural networks and neurons themselves.
+However, to truly understand where these inspirations came from, we need to understand neural networks and neurons themselves.
 
 So what are neural networks? What are the neurons and synapses that make them?
 
-![Structure of neuron](https://upload.wikimedia.org/wikipedia/commons/a/a9/Complete_neuron_cell_diagram_en.svg)
+![Structure of a neuron](https://upload.wikimedia.org/wikipedia/commons/a/a9/Complete_neuron_cell_diagram_en.svg)
 
-The above figure is a cellular diagram of a neuron, even though they can very quite drastically. Neurons can be divided into four morhphological regions: axons, dendrites, presynaptic terminals, and the cell's body (also called the soma). Together, these help the neuron generate signals and communicate with other brain cells.
+The above figure is a cellular diagram of a neuron, even though they can vary drastically. Neurons can be divided into four morhphological regions: axons, dendrites, presynaptic axon terminals, and the cell's body (also called the soma). Together, these help the neuron generate signals and communicate with other brain cells.
 
-It turns out the human brain is a network of more than 100 billion individual nerve cells interconnected in neural circuits that manefest into our perception of the world and guide our every action. Nerve cells with similar properties still give very different actions, simply based on how they are interconnected. Among all these cells, there are two fundamental cells that create the complicated networks in the brain: Neurons and glial cells. These cells, while located in the brain, are also located in the spinal chord and make up our central nervous system. While [glial cells](https://en.wikipedia.org/wiki/Glia) certainly play an important role in the brain, this tutorial will mainly focus on neurons due to their adoptation computer science. It may prove important in later versions of this tutorial to include them, but for now they will remain left out.
+It turns out the human brain is a network of more than 100 billion individual nerve cells interconnected in neural circuits that manifest into our perception of the world and guide our every action. Nerve cells with similar properties still give very different actions, simply based on how they are interconnected. Among all these cells, there are two fundamental cells that create the complicated networks in the brain: Neurons and glial cells. These cells, while located in the brain, are also located in the spinal chord and make up our central nervous system. While [glial cells](https://en.wikipedia.org/wiki/Glia) certainly play an important role in the brain, this tutorial will mainly focus on neurons due to their adoptations in computer science. It may prove important in later versions of this tutorial to include them, but for now they will remain left out.
 
 To get a better understanding of neurons, though, let's dig a little deeper into the details of these regions and what roles they play within [the structure of a neuron](https://www.khanacademy.org/science/biology/human-biology/neuron-nervous-system/v/anatomy-of-a-neuron):
 
 ### Dendrites
-A [dendrite](https://en.wikipedia.org/wiki/Dendrite) genrally function as the reciever and processor of incoming signals into the neruon. The signals it
-recieve can either be those which help excite or inhibit action potentials (more about that in a bit) within the neuron's body. It is also covered in many small bumps known as [spines](https://en.wikipedia.org/wiki/Dendritic_spine).
+A [dendrite](https://en.wikipedia.org/wiki/Dendrite) genrally functions as the reciever and processor of incoming signals from other neurons or brain cells. These signals are then passed into the neuron. The signals it recieves can either be those which help excite or inhibit action potentials (more about that in a bit) within the neuron's body. Dendrites are also covered in many small bumps known as [spines](https://en.wikipedia.org/wiki/Dendritic_spine).
 
 Within a given neuron, there can be one dendrite connection (like [bipolar neurons](https://en.wikipedia.org/wiki/Retina_bipolar_cell) in
 [the retina](https://www.ncbi.nlm.nih.gov/books/NBK10885/)) to as many as hundreds of thousands (like [Purkinje cells](https://en.wikipedia.org/wiki/Purkinje_cell) located in the cerebellum).
@@ -58,10 +57,17 @@ Along the neuron, they begin at what is called the [axon hillock](https://en.wik
 
 ### Presynaptic Axon Terminal
 The presynaptic [axon terminals](https://en.wikipedia.org/wiki/Axon_terminal) are at the very end of the axon's branches (also called telodendria),
-which are used to send [neurotransmitters](https://en.wikipedia.org/wiki/Neurotransmitter) to other target cells (which could be the soma or dendrites of a target neuron, a [muscle cell](https://en.wikipedia.org/wiki/Myocyte), or a [gland cell](https://en.wikipedia.org/wiki/Gland)). They appear as tiny bulbous swellings at the end of many telodendria.
+which are used to send neurotransmitters (covering shortly) to other target cells. They appear as tiny bulbous swellings at the end of many telodendria.
 
+### Synapses
 
+We've talked a bit about neurons and the general idea of how they work, but we haven't talked much about the synapses they make between other neurons.
 
+The neuron-to-neuron connection made between a presynaptic neuron's axon and a postsynaptic neuron's dendrite or cell body is what we call a synapse. They are responsible for the transmission of information between neurons. The neuron from which the action potential signals originate is called the presynaptic neuron, while the target neuron is called the postsynaptic neuron. The connections between a neuron and skeletal [muscle cells](https://en.wikipedia.org/wiki/Myocyte) are called [neuromuscular junctions](https://en.wikipedia.org/wiki/Neuromuscular_junction). Connections between neurons and smooth muscle cells and [glands]((https://en.wikipedia.org/wiki/Gland)) are called [neuroeffector junctions](https://en.wikipedia.org/wiki/Neuroeffector_junction).
+
+The information within a synapse is transferred by [neurotransmitters]((https://en.wikipedia.org/wiki/Neurotransmitter)) by the presynaptic neuron's [neurofillament](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3516374/) (or neurofibrils) using a method called
+
+[mirror neuron](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3510904/)
 
 I'll conlcude this section with a brief disclaimer. I by no means claim to be an expert in biology or neuroscience. I am simply a nerd who loves to learn about these things! If you want a deeper study into a lot of the fundamentals in neruoscience, I highly recomend "Principles of Neural Science" by Kandel, Schwartz, Jessell, Siegelbaum, and Hudspeth. I'm not mentioning this book for any marketing purposes, I just really like the book. A lot of what I covered in this section can be found in it, and much more interesting information.
 
