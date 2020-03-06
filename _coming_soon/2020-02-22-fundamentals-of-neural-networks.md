@@ -1,4 +1,7 @@
 ## Introduction
+<a id = "intro"></a>
+
+---
 
 This is a beginner's tutorial for all things neural networks and deep learning. A lot of this is from my own exploration of neural networks, all compiled into a self contained study. My hopes are that this will cover the theoretical, experimental and applicable sides of neural networks, as well as how they all come together. Often times these different perspectives tend to lead readers away from each other. Hopefully, this will help relieve some of the resulting blind spots we all find ourselves having to bridge.
 
@@ -7,12 +10,33 @@ Something to know now is that these tutorials will be long, simply due to being 
 I'll start by covering neural networks and neurons within neuroscience and how machine learning got it's inspiration from them. Then, we'll move on to some successful applications they've been used for. We'll also see in that section current room for future applications of NN's (Neural Networks). Finally after we've covered what NN's are and their applications, we'll start to explore their fundamentals (logistic regression, shallow and deep NN's, forward/backward-propagation, associated mathematics, etc.).
 
 ### Table of Content
+<a id = "toc"></a>
 
-[TOC]
+
+---
+<ul>
+    <a href=#toc style="text-decoration:none">Table of Content</a><br/>
+    <a href=#neuroscience style="text-decoration:none">Neural Networks within Neuroscience</a><br/>
+        &emsp;&emsp;<a href=#dendrites style="text-decoration:none">Dendrites</a><br/>
+        &emsp;&emsp;<a href=#soma style="text-decoration:none">The Cell's Body (or Soma)</a><br/>
+        &emsp;&emsp;<a href=#axon style="text-decoration:none">Axon</a><br/>
+        &emsp;&emsp;<a href=#axon-term style="text-decoration:none">Presynaptic Axon Terminal</a><br/>
+        &emsp;&emsp;<a href=#synapses style="text-decoration:none">Synapses</a><br/>
+    <a href=#nn-ml style="text-decoration:none">Neural Networks within Machine Learning</a><br/>
+    <a href=#know-data style="text-decoration:none">Knowing Your Data</a><br/>
+        &emsp;&emsp;<a href=#structured-data-sets style="text-decoration:none">Real World Data to Structured Data Sets</a><br/>
+    <a href=#basics style="text-decoration:none">The Basic Components in Neural Networks: Logistic Regression, Computational Graphs, and Backpropagation</a><br/>
+    <a href=#shallow-nn style="text-decoration:none">Shallow Neural Networks</a><br/>
+    <a href=#deep-nn style="text-decoration:none">Deep Neural Networks</a><br/>
+    <a href=#final-statement style="text-decoration:none">Final Statement</a><br/>
+</ul>
 
 After finishing this tutorial, you should be able to code neural networks with a thorough knowledge as to how they work. You will have no problem moving on to further topics. Anyways, let's get started!
 
 ## Neural Networks within Neuroscience
+<a id = "neuroscience"></a>
+
+---
 
 Through the years, a lot has been brought up about neural networks in the machine learning community, especially in deep learning. However, to truly understand where these inspirations came from, we need to understand neural networks and neurons themselves.
 
@@ -27,6 +51,9 @@ Our brain is an ecosystem of neurons and glial cells. And while it is controvers
 To get a better understanding of neurons, though, let's dig a little deeper into the details of these regions and what roles they play within [the structure of a neuron](https://www.khanacademy.org/science/biology/human-biology/neuron-nervous-system/v/anatomy-of-a-neuron).
 
 ### Dendrites
+<a id = "dendrites"></a>
+
+---
 
 A [dendrite](https://en.wikipedia.org/wiki/Dendrite) generally functions as the receiver and processor of incoming signals from other neurons or brain cells. These signals are then passed to the neuron's body, also called the [soma](https://en.wikipedia.org/wiki/Soma_(biology)). The signals it receives can either be those which help excite or inhibit action potentials (more about that in a bit) within the neuron's body. The sum of all the input signals received and processed by these dendritic connections may then cause an action potential within the cell's body to be sent from the axon hillock (again, more on this in a bit) down the axon to one (or more) synapse.
 
@@ -39,6 +66,9 @@ Within a given neuron, there can be one dendritic connection (like [bipolar neur
 
 
 ### The Cell's Body (or Soma)
+<a id = "soma"></a>
+
+---
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/e/ed/Neuron_Cell_Body.png" alt="Drawing" style="width: 600px;"/>
 
@@ -58,11 +88,18 @@ While the sodium-potassium pump is typically seen as only used for house keeping
 This detail may not seem to matter much for this tutorial, maybe very little of all these details do. However, for everyone involved (or on a path to be) in research it is an important note to make when considering how accurate we are representing neurons in machine learning today. If our goal is to eventually create systems that reach a general intelligence similar to our own, it helps to thoroughly acknowledge what makes us intelligent.
 
 ### Axon
+<a id = "axon"></a>
+
+---
+
 Generally, axons help their neuron transmit signals, namely the action potential previously discussed. They very greatly in length, so greatly that some extend beyond 2 meter within the body... quite a distance when you think of it. While their diameters generally range between 0.2 micro-meters to 20 micro-meters. In the central nervous system, they are typically very thin.
 
 Along the neuron, they begin at what is called the [axon hillock](https://en.wikipedia.org/wiki/Axon_hillock). They are covered by [myelin](https://en.wikipedia.org/wiki/Myelin), also known as the Schwann cell, which is interrupted in small intervals called the [nodes of Ranvier](https://www.ncbi.nlm.nih.gov/books/NBK537273/).
 
 ### Presynaptic Axon Terminal
+<a id = "axon-term"></a>
+
+---
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Synapse_Illustration2_tweaked.svg" alt="Drawing" style="width: 500px;"/>
 
@@ -72,6 +109,9 @@ The presynaptic [axon terminals](https://en.wikipedia.org/wiki/Axon_terminal) ar
 which are used to send neurotransmitters (covering shortly) to other target cells. They appear as tiny bulbous swellings at the end of many telodendria.
 
 ### Synapses
+<a id = "synapses"></a>
+
+---
 
 We've talked a bit about neurons and the general idea of how they work, but we haven't talked much about the synapses they make between other neurons.
 
@@ -88,28 +128,60 @@ While far from complete, all of the trillions of synapses can look like the foll
 I'll conclude this section with a brief disclaimer. I by no means claim to be an expert in biology or neuroscience. I am simply a nerd who loves to learn about these things! If you want a deeper study into a lot of the fundamentals in neuroscience, I highly recommend "Principles of Neural Science" by Kandel, Schwartz, Jessell, Siegelbaum, and Hudspeth. I'm not mentioning this book for any marketing purposes, I just really like the book. A lot of what I covered in this section can be found in it, and much more interesting information.
 
 ## Neural Networks within Machine Learning
+<a id = "nn-ml"></a>
+
+---
 
 Now that we understand how much is known about neural networks and their basic units in neuroscience, the next question is what applications have they had in computer science and machine learning. Also, what are their potential applications in the future?
 
 ## Knowing Your Data
+<a id = "know-data"></a>
+
+---
 
 Before we get into the specifics of neural networks, we first need to understand the data we'll be giving them. While this section could really be made into its own tutorial, it's worth including here if even briefly. If you talk to a lot of data scientists, machine learning practitioner's, and researchers, you'll eventually hear one complain just how much time they have to put into making the data clean and structured for their models. I myself didn't think much about this until I started working with neural networks (and machine learning models in general) in the real world. It can actually get very complicated, and sometimes just not possible to deal with.
 
 Even at times, a lot of companies simply see "machine learning" and want to put any data they have through a model, with little idea how it will work (if at all), only to walk away disappointed. Was it machine learning that failed? Typically not, there are plenty of Kaggle competition results to suggest just how well models can perform. Was it the data scientist or machine learning researcher who simply performed poorly? Could be, but then again it is only becoming easier and easier to make machine learning applications (AutoML being a good example). Then what could it be?! While it typically isn't one thing, it usually revolves around not understanding how real world data is cleaned and structured into model-ready data sets. Hopefully after this section, you'll know how to clean and structure real world data for your models (or if they even can be).
 
+### Real World Data to Structured Data Sets
+<a id = "structured-data-sets"></a>
+
+---
+
+Assuming we now understand our real world data and our intended application(s), we now are ready to structure it into training and test data sets for a neural network.
+
+Let's consider a training example $(x, y)$, where the feature vector is $x{\in}R^{n_x}$, i.e., a row vector with $n_x$ rows, and the target variable is $y{\in}\{0,1\}$. <br/>
+Let's also assume our training set is as follows:<br/>
+
+${\{}(x^{(1)}, y^{(1)}),(x^{(2)}, y^{(2)}),...,(x^{(m)}, y^{(m)}) {\}}$, where there are $m$ training examples.
+
+$$ {\LARGE X} = \begin{bmatrix} | & | & & | \\ X^{(1)} & X^{(2)} & ... & X^{(m)} \\ | & | & & | \end{bmatrix},$$
+$$ {Y} = [y^{(1)}  y^{(2)} ... y^{(m)}].$$
+
 ## The Basic Components in Neural Networks: Logistic Regression, Computational Graphs, and Backpropagation
+<a id = "basics"></a>
+
+---
 
 I'm sure you're ready to start understanding how our representations of neural networks are created. The good news is that starts now.
 
 ## Shallow Neural Networks
+<a id = "shallow-nn"></a>
+
+---
 
 Since we now understand the basic building blocks that make up our representation of neural network, we now turn to creating a full-fledged network. It'll be a basic network, but a neural network nonetheless.
 
 ## Deep Neural Networks
+<a id = "deep-nn"></a>
+
+---
 
 Now that we created our first shallow neural network, we're ready to go even deeper (pun intended). This time, we'll create a deep neural network with 5 hidden layers.
 
 ## Final Statements
+<a id = "final-statement"></a>
+
+---
 
 So you made it to the end, with several cups of coffee and naps no doubt. If you came this far and followed everything in this tutorial, you likely learned a lot about neural networks, their inspirations in computer science and machine learning, their underlying mathematics, and how they can be made from scratch. I'll end this tutorial with some of my own personal statements on them and my thoughts on their future.
-
