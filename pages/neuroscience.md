@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Tutorials
+title: Neuroscience
 feature-title: Under Construction
-permalink: /pages/tutorials/
+permalink: /pages/neuroscience/
 ---
 
 <b>This Page is Currently Under construction</b>
