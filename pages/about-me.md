@@ -1,7 +1,7 @@
 ---
 layout: page
-title: About Me
-feature-title:
+title: "About Me"
+feature-title: " "
 feature-image: 
 permalink: /pages/about/
 ---
