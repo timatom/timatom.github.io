@@ -4,5 +4,4 @@ title: About Me
 permalink: /pages/about/
 ---
 
-Timothy Rollings is a computer science graduate student at the Georgia Institute of Technology, specializing in machine learning.
-His research interests include machine learning, artificial intellegence, and cognitive neuroscience. He has industry experience as a data scientist and academic experience involving machine learning (namely computer vision).
+Timothy Rollings is a data scientist and graduate student at the Georgia Institute of Technology, majoring in computer science with a specialization in machine learning. His experience includes researching machine learning applications in oil pipeline dynamics and computer vision algorithms for multi-object tracking in robotics. His research interests include machine learning, artificial intellegence, and cognitive neuroscience. His background in both industry and academic research in machine learning allows him to bridge between both academic research and application.
