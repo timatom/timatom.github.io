@@ -1,10 +1,11 @@
 ---
 layout: page
-title: About
+title: About Me
 feature-title: Under Construction
 permalink: /pages/about/
 ---
 
-<b>This Page is Currently Under construction</b>
+Timothy Rollings is a computer science graduate student at the Georgia Institute of Technology, specializing in machine learning.
+His research interests include machine learning, artificial intellegence, cognitive neuroscience and astropaliontologicaleconometrics. He has industry experience as a data scientist and academic experience involving machine learning (namely computer vision).
 
-Awesome content coming back soon!
+When he's not following his research interests or harassing his wife for [], he's likely trying to appear more human than he really is, striking conversation with random people on the street, or simply giving up knowing he just isn't really all that human. As he notices how unhuman he is, he begins to wonder what it means to identify yourself as human and if that is simply a construct of the mind's reconciliation of existence. He further contemplates if such reconciliation is even really just a manefestation from awareness. This suggests to him that awareness and identity are the same, with the later simply protecting us from admitting that an identity is a self-categorized dillusion from the truth. The truth that we are simply aware as an animal, but no better or worse than any conscious minded species. This further leads him to wonder what consciousness really means to a human, or rather if such meaning matters. He further contemplates that a meaning of consciousness is a useless question since meaning itself is a delusional contruct of a species looking for purpose. Realizing this, he decides surely nothing has meaning and a mind is simply a meaningless existence in a meaningless reality. He concludes the pursuits of why a thing is what it is a far more fruitless question than whether anything has meaning or intrensic purpose. The coffee maker rings, he picks up his coffee, fils his mug with amazing Arabic coffee, and the suddenly drops it all over the floor and staining his white socks. At first, he is angery, and then remembers nothing really matters. As such, he goes back to his computer and continues his research about why and how things are and forgets to eat for the day, thus proving again why he really isn't so human. Poor Tim, and poor delicious Arabic coffee.
