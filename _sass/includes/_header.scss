@@ -42,7 +42,38 @@
       &:last-of-type {
         margin-right: 0;
       }
+      
+      a {
+        margin-bottom: 0.25em;
+        padding: 0.5em 1em;
+        font-family: $sans-serif;
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 1.5;
+        text-align: center;
+        text-decoration: none;
+        color: mix(#fff, $gray, 25%);
+        border: 1px solid $light-gray;
+        border-radius: 0;
+
+        &:hover {
+          color: $link-color-hover;
+        }
+
+        &.current {
+          color: #fff;
+          background: $primary-color;
+        }
+
+        &.disabled {
+          color: mix(#fff, $gray, 75%);
+          pointer-events: none;
+          cursor: not-allowed;
+        }
+      }
     }
+    
+    
     @media (max-width: 1100px) {
       ul {
         display: inline-block;
