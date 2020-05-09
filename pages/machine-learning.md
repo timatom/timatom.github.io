@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Machine Learning
-feature-title: Under Construction
+feature-title:
 permalink: /pages/machine-learning/
 ---
 
