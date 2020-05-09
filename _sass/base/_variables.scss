@@ -26,7 +26,7 @@ $search-color: #999 !default;
 
 // Header colours
 $header-link-color: #383838 !default;
-$link-color-hover: #DAE8FC !default;
+$link-color-hover: mix(#000, $link-color, 25%);
 
 // Feature image for articles
 $feature-image-text-color: #fff !default;
