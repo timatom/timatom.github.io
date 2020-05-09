@@ -8,6 +8,21 @@
 
   a {
     color: $header-link-color;
+    
+    &:hover {
+          color: $link-color-hover;
+        }
+
+    &.current {
+          color: #fff;
+          background: $primary-color;
+        }
+
+    &.disabled {
+          color: mix(#fff, $gray, 75%);
+          pointer-events: none;
+          cursor: not-allowed;
+        }
   }
 
   .avatar {
@@ -35,6 +50,7 @@
       float: right;
       text-align: right;
     }
+    
     li {
       display: inline;
       margin-right: 1em;
@@ -42,25 +58,7 @@
       &:last-of-type {
         margin-right: 0;
       }
-      
-      a {
-        &:hover {
-          color: $link-color-hover;
-        }
-
-        &.current {
-          color: #fff;
-          background: $primary-color;
-        }
-
-        &.disabled {
-          color: mix(#fff, $gray, 75%);
-          pointer-events: none;
-          cursor: not-allowed;
-        }
-      }
     }
-    
     
     @media (max-width: 1100px) {
       ul {
