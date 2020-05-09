@@ -23,6 +23,22 @@
           pointer-events: none;
           cursor: not-allowed;
         }
+    
+    &:first-child {
+      margin-left: 0;
+
+      a {
+        border-top-left-radius: $border-radius;
+        border-bottom-left-radius: $border-radius;
+      }
+    }
+
+    &:last-child {
+      a {
+        border-top-right-radius: $border-radius;
+        border-bottom-right-radius: $border-radius;
+      }
+    }
   }
 
   .avatar {
