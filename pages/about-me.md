@@ -1,7 +1,8 @@
 ---
 layout: page
 title: About Me
-feature-image: /assets/img/personal-pic.jpg
+feature-title:
+feature-image: 
 permalink: /pages/about/
 ---
 
