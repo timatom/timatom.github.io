@@ -20,7 +20,7 @@ main:
     url: /year-archive/
     
   - title: "CV"
-    url: /cv/
+    url: https://www.linkedin.com/in/timothyrollings/ #/cv/
     
   #- title: "Guide"
   #  url: /markdown/
