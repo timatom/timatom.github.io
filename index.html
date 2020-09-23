@@ -1,23 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <link rel="stylesheet" href="styles.css">
-  <title>Timothy Rollings</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- This is the fluid simulation code-->
+<script src="../threejs/three/build/three.min.js"></script>
+<script defer src="../threejs/js/main-flow-1.js"></script>
+<!-- End of simulation code-->
+
+<meta charset="utf-8">
+<link rel="stylesheet" href="styles.css">
+<title>Timothy Rollings</title>
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><img class="logo" src="\images\logo.png"></li>
-        <li><a class="logo-name" href="#">Timothy Rollings</a></li>
-        <li><a href="#">About</a></li>
-        <li><a class="active" href="#">Work</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
+
+<div class="topnav">
+  <div class="logo">
+      <img src="\images\logo.png"></img>
+      <a>Timothy Rollings</a>
+  </div>
+
+  <a href="#">Contact</a>
+  <a href="#">Work</a>
+  <a href="#">About</a>
+</div>
+
+<div class="fluid-1">
+  <canvas id="c"></canvas>
+</div>
 
 </body>
 </html>

@@ -1,0 +1,71 @@
+@font-face {
+  src: url(fonts/helvetica-lt-55-roman.ttf);
+  font-family: helv-r;
+}
+
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0 0 0 0;
+    background-color: #fff;
+}
+
+.logo{
+  height: 40px;
+  vertical-align:middle;
+  margin-right:5px;
+}
+
+a.logo-name{
+  font-family: times;
+  font-weight: bold;
+  font-size: 20px;
+
+  margin-right:780px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0 30px;
+    margin: 0;
+    background-color: #fff;
+
+    /* This helps creat the shadow effects on the navigation bar. */
+    -webkit-box-shadow: 0px 2px 4px #828282;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow:    0px 2px 4px #828282;  /* Firefox 3.5 - 3.6 */
+    box-shadow:         0px 2px 4px #828282;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+
+    text-align: right; /* step 6 */
+}
+nav li {
+  display: inline-block; /* step 1 */
+  /*width: 10%; /* step 4 */
+  padding: 0 0;
+  margin-right: -4px; /* step 5 */
+}
+nav a {
+  display: block; /* step 2 */
+  text-decoration: none; /* step 3 */
+  text-transform: uppercase;
+  color: #303036;
+}
+/* common text style */
+nav a {
+  font-family:helv-r;
+  text-align: right;
+  height: 40%; /* vertically center */
+  line-height: 40%; /* vertically center */
+  color: #000;
+  padding: 30px;
+  margin: 0px;
+}
+nav a:hover {
+  color: #67BDE0;
+}
+
+nav a.active {
+  color: #67BDE0;
+  cursor: default;
+}

@@ -1,71 +1,92 @@
 @font-face {
-  src: url(fonts/helvetica-lt-55-roman.ttf);
+  src: url(../fonts/helvetica-lt-55-roman.ttf);
   font-family: helv-r;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
+
 body {
-    margin: 0;
-    padding: 0 0 0 0;
-    background-color: #fff;
+  margin: 0;
 }
 
-.logo{
-  width: 40px;
-  vertical-align:middle;
-  margin-right:5px;
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #fff;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 12px;
+  padding-bottom: 10px;
+
+  z-index:3;
+
+
+  /* This helps creat the shadow effects on the navigation bar. */
+  -webkit-box-shadow: 0px 2px 4px #828282;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow:    0px 2px 4px #828282;  /* Firefox 3.5 - 3.6 */
+  box-shadow:         0px 2px 4px #828282;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
 }
 
-a.logo-name{
+/* Style the topnav links */
+.topnav a {
+  float: right;
+  display: block;
+  color: #303036;
+  text-align: center;
+  font-family:helv-r;
+  font-size:16px;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  color: #67BDE0;
+}
+
+.logo {
+  float: left;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.logo img{
+  height:50px;
+}
+
+.logo a{
   font-family: times;
   font-weight: bold;
   font-size: 20px;
-
-  margin-right:780px;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0 30px;
-    margin: 0;
-    background-color: #fff;
-
-    /* This helps creat the shadow effects on the navigation bar. */
-    -webkit-box-shadow: 0px 2px 4px #828282;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
-    -moz-box-shadow:    0px 2px 4px #828282;  /* Firefox 3.5 - 3.6 */
-    box-shadow:         0px 2px 4px #828282;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
-
-    text-align: right; /* step 6 */
-}
-nav li {
-  display: inline-block; /* step 1 */
-  /*width: 10%; /* step 4 */
-  padding: 0 0;
-  margin-right: -4px; /* step 5 */
-}
-nav a {
-  display: block; /* step 2 */
-  text-decoration: none; /* step 3 */
-  text-transform: uppercase;
+/* Change color on hover */
+.logo a:hover {
   color: #303036;
 }
-/* common text style */
-nav a {
-  font-family:helv-r;
-  text-align: right;
-  height: 40%; /* vertically center */
-  line-height: 40%; /* vertically center */
-  color: #000;
-  padding: 30px;
-  margin: 0px;
-}
-nav a:hover {
-  color: #67BDE0;
+
+.fluid-1{
+  z-index:-1;
 }
 
-nav a.active {
-  color: #67BDE0;
-  cursor: default;
+.fluid-1 body{
+  margin: 0;
+  background-color: white;
+  font-family: "Open Sans";
+}
+
+.fluid-1 canvas{
+  z-index:-1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 40;
+    margin: auto;
+    background: rgba(10, 10, 11);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
