@@ -4,8 +4,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- This is the simulation code-->
 <script src="../threejs/three/build/three.min.js"></script>
-<script defer src="../threejs/js/main-flow-1.js"></script>
-<script defer src="../threejs/js/main-flow-2.js"></script>
 <script defer src="../threejs/js/main-sa.js"></script>
 <!-- End of simulation code-->
 <meta charset="utf-8">
@@ -13,8 +11,8 @@
 <title>Timothy Rollings</title>
 </head>
 <body>
-  <div class="grid-container">
-    <div class="nav">
+  <div class="grid">
+    <div class="box nav">
         <div class="logo">
             <img src="\images\logo.png"></img>
             <a>Timothy Rollings</a>
@@ -23,10 +21,17 @@
         <a href="#">Work</a>
         <a href="#">About</a>
     </div>
-    <div class="hero">Title 1</div>
-    <div class="hero">Title 2</div>
-    <div class="hero">Body Text</div>
-    <div class="hero">Contact Button</div>
+    <div class="box hero">
+      <div class="hero">
+        <div class="text">
+          <div class="title-1" style="text-decoration:underline;">Timothy Rollings,</div>
+          <div class="title-2">an entrepreneur and forever learner.</div>
+          <div class="body">I'm an autodidact who loves helping others understand the world by bringing mathematics, data science, and machine learning together to solve problems.
+          </div>
+          <div class="action button">Reach Out</div>
+        </div>
+      </div>
+    </div>
     <div class="sim">
       <div class="sim">
         <canvas id="c"></canvas>

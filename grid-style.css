@@ -1,3 +1,4 @@
+/*This portion of CSS code is for custom fonts.*/
 @font-face {
   src: url(../fonts/helvetica-lt-55-roman.ttf);
   font-family: helv-r;
@@ -6,7 +7,9 @@
   src: url(../fonts/mrseavesroman.ttf);
   font-family: eaves-r;
 }
+/*End of the custom font's CSS code.*/
 
+/*This portion of CSS code is for styling the navigation bar in the header.*/
 .nav {
   grid-area: header;
 }
@@ -17,7 +20,9 @@
   overflow: hidden;
   background-color: lightblue;
 }
+/*End of the navigation bar's CSS code.*/
 
+/*This portion of CSS code is for styling the hero's content section.*/
 .hero {
   grid-area: hero;
 }
@@ -79,7 +84,9 @@
   text-transform: uppercase;
   color: #F5F5F5;
 }
+/*End of hero's CSS code.*/
 
+/*This portion of CSS code is for styling the about section's content.*/
 .about {
   grid-area: about;
 }
@@ -87,7 +94,9 @@
   height:620px;
   background-color: darkgrey;
 }
+/*End of the about section's CSS code.*/
 
+/*This portion of CSS code is for styling the work section's content.*/
 .work {
   grid-area: work;
 }
@@ -95,7 +104,9 @@
   height:620px;
   background-color: darkgrey;
 }
+/*End of the work section's CSS code.*/
 
+/*This portion of CSS code is for styling the simulation content.*/
 .sim {
   grid-area: sim;
 }
@@ -106,14 +117,18 @@
   margin-top:100px;
   background-color: darkgrey;
 }
+/*End of simulation's CSS code.*/
 
+/*This portion of CSS code is for styling the footer section's content.*/
 .footer {
   grid-area: footer;
 }
 .footer {
   background-color: darkgrey;
 }
+/*End of the work section's CSS code.*/
 
+/*This portion of CSS code is for styling the main grid container.*/
 .grid {
   display: grid;
   grid-template-areas:
@@ -131,3 +146,4 @@
   padding: 20px;
   font-size: 150%;
 }
+/*End of grid container's CSS code.*/
