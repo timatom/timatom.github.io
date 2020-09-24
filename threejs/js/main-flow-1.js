@@ -107,7 +107,7 @@
     function init() {
 
         //These lines get the canvas DOM element and canvas context, respectively.
-        canvas = document.getElementById("c");
+        canvas = document.getElementById("c-1");
         ctx = canvas.getContext("2d");
 
         //These two set the width and height of the canvas to the defined values.
@@ -183,6 +183,23 @@
         gen_rand_particles();
     }
 
+    /*
+    The following helps handle the css color defined in a .css file
+    This will help with handling such things as dynamic changes in
+    color.
+    */
+
+    function colorFromCSSClass(className)
+    {
+      var tmp = document.createElement("div"), color;
+      tmp.style.cssText = "position:fixed;left:-100px;top:-100px;width:1px;height:1px";
+      tmp.className = className;
+      document.body.appendChild(tmp);  // required in some browsers
+      color = getComputedStyle(tmp).getPropertyValue("color");
+      document.body.removeChild(tmp);
+      return color
+    }
+
 
     /*
     This is the main animation loop. It is run once from the init() function when the page is fully loaded and
@@ -197,7 +214,7 @@
         ctx.clearRect(0, 0, canvas.width, canvas.height);
 
         //This sets the color to draw with.
-        ctx.strokeStyle = 'rgba(255, 255, 255, 0.8)';//"#ffffff";
+        ctx.strokeStyle = colorFromCSSClass("strokeStyle");//'rgba(255, 255, 255, 0.8)';//"#ffffff";
         ctx.lineWidth = 1;
 
         //This calls the function to update the particle positions.

@@ -1,0 +1,147 @@
+/*Grid Layout Styling*/
+.nav {
+  grid-area: header;
+}
+
+/* Style the top navigation bar */
+.nav {
+  position: fixed; /*Helps keep the navigation bar fixed throughout */
+  width: 100%;
+  overflow: hidden;
+  background-color: #ffffff;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 12px;
+  padding-bottom: 10px;
+
+  /* This helps creat the shadow effects on the navigation bar. */
+  -webkit-box-shadow: 0px 2px 4px #828282;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow:    0px 2px 4px #828282;  /* Firefox 3.5 - 3.6 */
+  box-shadow:         0px 2px 4px #828282;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+
+/* Style the topnav links */
+.nav a {
+  float: right;
+  display: block;
+  color: #303036;
+  text-align: center;
+  font-family:helv-r;
+  font-size:16px;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* Change color on hover */
+.nav a:hover {
+  color: #67BDE0;
+}
+
+.hero {
+  margin: 100px;
+  grid-area: hero;
+  height:620px;
+}
+.sim {
+  grid-area: sim;
+  height:800px;
+  z-index:-1;
+}
+
+.about {
+  margin: 100px;
+  grid-area: about;
+  height:620px;
+}
+
+.work {
+  margin: 100px;
+  grid-area: work;
+  height:620px;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'hero hero hero hero sim sim'
+    'about about about about sim sim'
+    'work work work work sim sim'
+    'footer footer footer footer footer footer';
+  grid-gap: 20px;
+  background-color: ;/*lightgrey;*/
+}
+
+.grid-container > div {
+  text-align: center;
+  font-size: 30px;
+}
+
+/*End of Grid Layout Styling*/
+
+@font-face {
+  src: url(../fonts/helvetica-lt-55-roman.ttf);
+  font-family: helv-r;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.logo {
+  float: left;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.logo img{
+  height:50px;
+}
+
+.logo a{
+  font-family: times;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* Change color on hover */
+.logo a:hover {
+  color: #303036;
+}
+
+/*Simulation Styling*/
+
+.sim{
+  z-index: -1;
+}
+
+.sim body{
+  /*margin: 0;*/
+  background-color: white;
+}
+.sim canvas{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 40;
+    margin: auto;
+    background: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* This is for styling the strokeStyle color used in the javascript code. */
+/* This helps make the color more dynamic. */
+.strokeStyle{
+  color: rgba(255, 255, 255, 0.8)/*#303036;*/
+}

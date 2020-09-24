@@ -1,0 +1,133 @@
+@font-face {
+  src: url(../fonts/helvetica-lt-55-roman.ttf);
+  font-family: helv-r;
+}
+@font-face {
+  src: url(../fonts/mrseavesroman.ttf);
+  font-family: eaves-r;
+}
+
+.nav {
+  grid-area: header;
+}
+.nav {
+  position: fixed; /*Helps keep the navigation bar fixed throughout */
+  margin: 0px;
+  width: 100%;
+  overflow: hidden;
+  background-color: lightblue;
+}
+
+.hero {
+  grid-area: hero;
+}
+.hero {
+  margin: 100px;
+  background-color: grey;
+  justify-content: middle;
+  align-items: middle;
+}
+.hero .text {
+  display: grid;
+  grid-gap: 1px;
+  grid-template-columns:  repeat(2, 280px);
+  grid-template-rows: repeat(7, 30px);
+  background-color: darkgrey;
+  justify-content: center;
+  align-items: center;
+}
+.title-1{
+  padding:0px;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  text-align:left;
+  background-color: darkblue;
+  font-family:helv-r;
+  font-size: 31.25px;
+}
+.title-2{
+  padding:0px;
+  grid-column: 1/3;
+  grid-row: 2/3;
+  text-align:left;
+  background-color: darkgreen;
+  font-family:helv-r;
+  font-size: 31.25px;
+}
+.body{
+  grid-column: 1/3;
+  grid-row: 4/5;
+  text-align:left;
+  background-color: orange;
+  font-family:eaves-r;
+  font-size: 20px;
+}
+.action {
+  grid-column: 1/2;
+  grid-row: 6/7;
+}
+.button{
+  width:160px;
+  height:40px;
+  display: inline-block;
+  line-height:40px;
+  text-align: center;
+  background-color: #1C1C1E;
+  font-family: helv-r;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #F5F5F5;
+}
+
+.about {
+  grid-area: about;
+}
+.about{
+  height:620px;
+  background-color: darkgrey;
+}
+
+.work {
+  grid-area: work;
+}
+.work {
+  height:620px;
+  background-color: darkgrey;
+}
+
+.sim {
+  grid-area: sim;
+}
+.sim {
+  position: right;
+  width:400px;
+  height: 700px;
+  margin-top:100px;
+  background-color: darkgrey;
+}
+
+.footer {
+  grid-area: footer;
+}
+.footer {
+  background-color: darkgrey;
+}
+
+.grid {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'hero hero hero hero sim sim'
+    'about about about about sim sim'
+    'work work work work sim sim'
+    'footer footer footer footer footer footer';
+  grid-gap: 20px;
+}
+
+.box {
+  color: #fff;
+  border-color: black;
+  padding: 20px;
+  font-size: 150%;
+}

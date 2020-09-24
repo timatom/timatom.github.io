@@ -2,7 +2,7 @@ const canvas = document.getElementById('c')
 const ctx = canvas.getContext('2d')
 
 canvas.width = 400;
-canvas.height = 800;
+canvas.height = 700;
 
 const resizeCanvas = (canvas) =>
 {
@@ -15,7 +15,7 @@ const resizeCanvas = (canvas) =>
 }
 resizeCanvas(canvas)
 
-ctx.translate(canvas.width / 2.0, canvas.height/5);
+ctx.translate(canvas.width / 2.0, canvas.height/8);
 ctx.globalCompositeOperation = 'lighter'
 ctx.lineWidth = 1
 
@@ -37,7 +37,7 @@ function Particle(x, y, z)
 
 particles = [];
 
-for(var i = 0; i < 1000; i++)
+for(var i = 0; i < 10; i++)
 {
   particles.push(new Particle(Math.random()*10, Math.random()*10, Math.random()*10));
 }
@@ -46,7 +46,7 @@ let scale = 10
 
 function Lorenz(x, y, z)
 {
-  const dt = 0.01;
+  const dt = 0.006;
   const a = 20
   const b = 8/3
   const c = 28
@@ -60,7 +60,7 @@ const iterate = (time) =>
 {
   for(var i = 0; i < particles.length; i++)
   {
-    ctx.strokeStyle = 'rgba(48, 48, 54, 0.005)';
+    ctx.strokeStyle = 'rgba(48, 48, 54, 0.05)';
     ctx.beginPath();
     ctx.moveTo(particles[i].x*scale, particles[i].z*scale);
     particles[i].update();
