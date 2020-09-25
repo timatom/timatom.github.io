@@ -1,4 +1,15 @@
-/*Grid Layout Styling*/
+/*This portion of CSS code is for custom fonts.*/
+@font-face {
+  src: url(../fonts/helvetica-lt-55-roman.ttf);
+  font-family: helv-r;
+}
+@font-face {
+  src: url(../fonts/mrseavesroman.ttf);
+  font-family: eaves-r;
+}
+/*End of the custom font's CSS code.*/
+
+/*This portion of CSS code is for styling the navigation bar in the header.*/
 .nav {
   grid-area: header;
 }
@@ -38,133 +49,23 @@
   color: #67BDE0;
 }
 
-.hero{
-  grid-area: hero;
-}
-.hero {
-  margin-top: 140px;
-  margin-left: 100px;
-  margin-bottom: 100px;
-  width:75%;
-  /*background-color: grey;*/
-  justify-content: middle;
-  align-items: middle;
-}
-.hero .text {
-  display: grid;
-  grid-gap: 1px;
-  grid-template-columns:  repeat(2, 280px);
-  grid-template-rows: repeat(7, 30px);
-  color: #303036; /*Jet Black*/
-  /*background-color: darkgrey;*/
-  justify-content: center;
-  align-items: center;
-}
-.title-1{
-  padding:0px;
-  grid-column: 1/2;
-  grid-row: 1/2;
-  text-align:left;
-  /*background-color: darkblue;*/
-  font-family:helv-r;
-  font-size: 31.25px;
-  font-weight:bold;;
-}
-.title-2{
-  padding:0px;
-  grid-column: 1/3;
-  grid-row: 2/3;
-  text-align:left;
-  /*background-color: darkgreen;*/
-  font-family:helv-r;
-  font-size: 31.25px;
-  font-weight:bold;
-}
-.body{
-  grid-column: 1/3;
-  grid-row: 4/5;
-  text-align:left;
-  /*background-color: orange;*/
-  font-family:eaves-r;
-  font-size: 20px;
-}
-.action {
-  grid-column: 1/2;
-  grid-row: 6/7;
-}
-.button{
-  width:160px;
-  height:40px;
+.nav .button{
+  margin-top:5px;
+  margin-left:30px;
+  padding-left:40px;
+  padding-right:40px;
+  float: right;
+  width:200;
+  height:35px;
   display: inline-block;
-  line-height:40px;
+  line-height:35px;
   text-align: center;
-  background-color: #1C1C1E; /*Eerie Black*/
+  background-color: #1C1C1E;
   font-family: helv-r;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: bold;
   text-transform: uppercase;
-  color: #F5F5F5; /*Cultured White*/
-}
-/* Change background and text colors on hover */
-.button:hover {
-  background-color: #67BDE0; /*Dark Sky Blue*/
-  color: #303036; /*Jet Black*/
-}
-
-
-.sim {
-  grid-area: sim;
-  height:800px;
-  z-index:-1;
-}
-
-.about {
-  margin: 100px;
-  grid-area: about;
-  height:620px;
-}
-
-.work {
-  grid-area: work;
-}
-.work {
-  margin: 100px;
-  height:620px;
-}
-
-.footer {
-  grid-area: footer;
-}
-
-.grid {
-  display: grid;
-  grid-template-areas:
-    'header header header header header header'
-    'hero hero hero hero sim sim'
-    'about about about about sim sim'
-    'work work work work sim sim'
-    'footer footer footer footer footer footer';
-  grid-gap: 20px;
-}
-
-/*End of Grid Layout Styling*/
-
-@font-face {
-  src: url(../fonts/helvetica-lt-55-roman.ttf);
-  font-family: helv-r;
-}
-
-@font-face {
-  src: url(../fonts/mrseavesroman.ttf);
-  font-family: eaves-r;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
+  color: #F5F5F5;
 }
 
 .logo {
@@ -189,11 +90,138 @@ body {
 .logo a:hover {
   color: #565661; /*Davys Grey*/
 }
+/*End of the navigation bar's CSS code.*/
 
-/*Simulation Styling*/
+/*This portion of CSS code is for styling the hero's content section.*/
+.hero{
+  grid-area: hero;
+}
+.hero {
+  margin-top: 120px;
+  margin-left: 37px;
+  margin-bottom: 100px;
+  width:75%;
+  /*background-color: grey;*/
+  justify-content: middle;
+  align-items: middle;
+}
+.hero .text {
+  display: grid;
+  grid-gap: 1px;
+  grid-template-columns:  repeat(2, 350px);
+  grid-template-rows: repeat(7, 40px);
+  color: #303036; /*Jet Black*/
+  /*background-color: darkgrey;*/
+  justify-content: center;
+  align-items: center;
+}
+.title-1{
+  padding:0px;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  text-align:left;
+  /*background-color: darkblue;*/
+  font-family:helv-r;
+  font-size: 39.06px;
+  font-weight:bold;;
+}
+.title-2{
+  padding:0px;
+  grid-column: 1/3;
+  grid-row: 2/3;
+  text-align:left;
+  /*background-color: darkgreen;*/
+  font-family:helv-r;
+  font-size: 39.06px;
+  font-weight:bold;
+}
+.body{
+  grid-column: 1/3;
+  grid-row: 4/5;
+  text-align:left;
+  /*background-color: orange;*/
+  font-family:eaves-r;
+  font-size: 25px;
+}
+.action {
+  grid-column: 1/2;
+  grid-row: 6/7;
+}
+.hero .button{
+  width:200px;
+  height:50px;
+  display: inline-block;
+  line-height:50px;
+  text-align: center;
+  background-color: #1C1C1E; /*Eerie Black*/
+  font-family: helv-r;
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #F5F5F5; /*Cultured White*/
+}
+/*End of hero's CSS code.*/
 
-.sim{
-  z-index: -1;
+/*This portion of CSS code is for styling the about section's content.*/
+.about {
+  grid-area: about;
+}
+.about {
+  /*height:620px;
+  background-color: darkgrey;*/
+  margin-top: 160px;
+  margin-left: 60px;
+  width:75%;
+  /*background-color: grey;*/
+  justify-content: middle;
+  align-items: middle;
+}
+.about .text {
+  color: #303036; /*Jet Black*/
+}
+.about .button{
+  width:300px;
+  height:50px;
+  display: inline-block;
+  line-height:50px;
+  text-align: center;
+  background-color: #1C1C1E;
+  font-family: helv-r;
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #F5F5F5;
+}
+/*End of the about section's CSS code.*/
+
+/*This portion of CSS code is for styling the work section's content.*/
+.work {
+  grid-area: work;
+}
+.work {
+  /*height:620px;
+  background-color: darkgrey;*/
+  /*margin: 100px;*/
+  /*background-color: grey;*/
+  margin-top: 270px;
+  margin-left: 60px;
+  width:75%;
+  justify-content: middle;
+  align-items: middle;
+}
+.work .text {
+  color: #303036; /*Jet Black*/
+}
+.work p{
+  padding-bottom: 30px;
+}
+/*End of the work section's CSS code.*/
+
+/*This portion of CSS code is for styling the simulation content.*/
+.sim {
+  grid-area: sim;
+  height:800px;
+  z-index:-1;
 }
 
 .sim body{
@@ -210,12 +238,54 @@ body {
     background: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+/*End of simulation's CSS code.*/
+
+/*This portion of CSS code is for styling the footer section's content.*/
+.footer {
+  grid-area: footer;
+}
+/*End of the work section's CSS code.*/
+
+/*This portion of CSS code is for styling the main grid container.*/
+.grid {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'hero hero hero hero sim sim'
+    'about about about about sim sim'
+    'work work work work sim sim'
+    'footer footer footer footer footer footer';
+  grid-gap: 20px;
+}
 
 .box {
   color: #fff;
   border-color: black;
   padding: 20px;
   font-size: 150%;
+}
+/*End of grid container's CSS code.*/
+
+/* Misc. CSS code used in several parts of the website, such as buttons, */
+/* dynamic color changes based on scroll position, etc. */
+
+/* This helps take away the margin that exists around the site's entire layout*/
+body {
+  margin: 0;
+}
+
+/* The CSS box-sizing property allows us to include the padding and */
+/* border in an element's total width and height.*/
+* {
+  box-sizing: border-box;
+}
+
+/* Change's a button's background and text colors on hover */
+/* The same color transitions remain the same through all button'supports */
+/* on this website. */
+.button:hover {
+  background-color: #67BDE0; /*Dark Sky Blue*/
+  color: #303036; /*Jet Black*/
 }
 
 /* This is for styling the strokeStyle color used in the javascript code. */

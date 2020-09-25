@@ -9,6 +9,11 @@
 }
 /*End of the custom font's CSS code.*/
 
+/*This helps take away the margin that exists at the ends of the site's entire layout*/
+body {
+  margin: 0;
+}
+
 /*This portion of CSS code is for styling the navigation bar in the header.*/
 .nav {
   grid-area: header;
@@ -29,15 +34,15 @@
 .hero {
   margin: 100px;
   background-color: grey;
-  justify-content: middle;
-  align-items: middle;
+  justify-content: left;
+  align-items: left;
 }
 .hero .text {
   display: grid;
   grid-gap: 1px;
   grid-template-columns:  repeat(2, 280px);
   grid-template-rows: repeat(7, 30px);
-  background-color: darkgrey;
+  /*background-color: darkgrey;*/
   justify-content: center;
   align-items: center;
 }
@@ -67,11 +72,11 @@
   font-family:eaves-r;
   font-size: 20px;
 }
-.action {
+.hero .action {
   grid-column: 1/2;
   grid-row: 6/7;
 }
-.button{
+.hero .button{
   width:160px;
   height:40px;
   display: inline-block;
@@ -91,8 +96,29 @@
   grid-area: about;
 }
 .about{
-  height:620px;
-  background-color: darkgrey;
+  /*height:620px;
+  background-color: darkgrey;*/
+  margin: 100px;
+  background-color: grey;
+  justify-content: middle;
+  align-items: middle;
+}
+.about .action {
+  grid-column: 1/2;
+  grid-row: 6/7;
+}
+.about .button{
+  width:300px;
+  height:40px;
+  display: inline-block;
+  line-height:40px;
+  text-align: center;
+  background-color: #1C1C1E;
+  font-family: helv-r;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #F5F5F5;
 }
 /*End of the about section's CSS code.*/
 
@@ -101,8 +127,15 @@
   grid-area: work;
 }
 .work {
-  height:620px;
-  background-color: darkgrey;
+  /*height:620px;
+  background-color: darkgrey;*/
+  margin: 100px;
+  background-color: grey;
+  justify-content: middle;
+  align-items: middle;
+}
+.work p{
+  padding-bottom: 30px;
 }
 /*End of the work section's CSS code.*/
 
