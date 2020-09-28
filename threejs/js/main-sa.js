@@ -1,7 +1,7 @@
 const canvas = document.getElementById('c')
 const ctx = canvas.getContext('2d')
 
-canvas.width = 400;
+canvas.width = 360;
 canvas.height = 700;
 
 const resizeCanvas = (canvas) =>
