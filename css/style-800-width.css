@@ -1,18 +1,5 @@
 @media all and (max-width: 800px)
 {
-  /*This portion of CSS code is for styling the landing page grid container.*/
-  .landing-grid {
-    display: grid;
-    grid-template-areas:
-      'header header header header header header'
-      'hero hero hero hero hero hero'
-      'sim sim sim sim sim sim'
-      'about about about about about about'
-      'work work work work about about'
-      'footer footer footer footer footer footer';
-    grid-gap: 0px;
-  }
-  /*End of landing page grid container's CSS code.*/
   canvas {
           grid-area: sim;
           -ms-transform: rotate(90deg); /* IE 9 */
@@ -56,7 +43,7 @@
    /*This portion of CSS code is for styling the hero's content section.*/
    .hero
    {
-     margin-top: 5em;
+     margin-top: 8em;
      margin-bottom: 21%;
      margin-left: 30px;
      margin-right: 30px;
