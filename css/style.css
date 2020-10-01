@@ -115,8 +115,8 @@ ion-icon {
   grid-area: hero;
 }
 .hero {
-  margin-top: 12em;
-  margin-bottom: 15%;
+  margin-top: 13em;
+  margin-bottom: 13em;
   margin-left: 12%;
   width: 70%;
   /*background-color: lightblue;*/ /*For debugging layout*/
@@ -175,8 +175,8 @@ ion-icon {
   grid-area: about;
 }
 .about {
-  margin-top: 12em;
-  margin-bottom: 15%;
+  margin-top: 12%;
+  margin-bottom: 12%;
   margin-left: 12%;
   /*margin-right: 7.32%;*/
   width: 65%;
@@ -225,8 +225,22 @@ ion-icon {
 /* whatever works (I used it here to represent 'sections'). Adjust */
 /* transition speed to .001s for instantaneous. */
 .about:target {
-  margin-top:0px;
-  padding-top:100px;
+  margin-top:-145px;
+  padding-top:145px;
+}
+@media all and (max-width: 1160px)
+{
+  .about:target {
+    margin-top:-110px;
+    padding-top:110px;
+  }
+}
+@media all and (max-width: 886px)
+{
+  .about:target {
+    margin-top:-80px;
+    padding-top:80px;
+  }
 }
 /* Add 'Currently Reading' to targeted section (optional) */
 .about:target:before {
@@ -290,8 +304,8 @@ ion-icon {
   grid-area: work;
 }
 .work {
-  margin-top: 12em;
-  margin-bottom: 15%;
+  margin-top: 5%;
+  margin-bottom: 5%;
   margin-left: 12%;
   width: 70%;
   /*background-color: lightgrey;*/
@@ -327,8 +341,15 @@ ion-icon {
 /* whatever works (I used it here to represent 'sections'). Adjust */
 /* transition speed to .001s for instantaneous. */
 .work:target {
-  margin-top:30px;
-  padding-top:100px;
+  margin-top: -145px;
+  padding-top: 145px;
+}
+@media all and (max-width: 1160px)
+{
+  .work:target {
+    margin-top:-110px;
+    padding-top:110px;
+  }
 }
 /* Add 'Currently Reading' to targeted section (optional) */
 .work:target:before {
@@ -347,10 +368,10 @@ canvas{
     position: fixed;
     top: 0px;
     right: 0px;
-    width:25%;
+    width:50%;
     height: 100%;
     background: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
 }
 /*End of simulation's CSS code.*/
 
@@ -493,19 +514,6 @@ canvas{
   grid-area: footer;
 }
 /*End of the work section's CSS code.*/
-
-/*This portion of CSS code is for styling the landing page grid container.*/
-.landing-grid {
-  display: grid;
-  grid-template-areas:
-    'header header header header header header'
-    'hero hero hero hero sim sim'
-    'about about about about sim sim'
-    'work work work work sim sim'
-    'footer footer footer footer footer footer';
-  grid-gap: 20px;
-}
-/*End of landing page grid container's CSS code.*/
 
 /*This portion of CSS code is for styling the about me page grid container.*/
 .about-grid {
