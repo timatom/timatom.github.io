@@ -1,8 +1,11 @@
 const canvas = document.getElementById('c')
 const ctx = canvas.getContext('2d')
 
-canvas.width = 360;
-canvas.height = 700;
+
+//canvas.width = screen.width*0.26;//360;
+//canvas.height = screen.height*1.21;
+canvas.width = canvas.clientWidth;//screen.width*0.2;//360;
+canvas.height = canvas.clientHeight;//screen.height*1.7;
 
 const resizeCanvas = (canvas) =>
 {
