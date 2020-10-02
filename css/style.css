@@ -263,32 +263,45 @@ ion-icon {
   grid-area: img;
 }
 .my-img {
-  margin-top: 80px;
-  margin-left: 30px;
-  margin-right: 30px;
+  width:70%;
+  margin-top: 125px;
+  margin-bottom: 60px;
+  margin-left: 10%;/*60px;*/
+  margin-right: 0px;
+  padding:0px;
+  /*margin-right: 30px;*/
 }
 .my-img {
   display: grid;
   color: #303036; /*Jet Black*/
   /*background-color: darkgrey;*/
-  justify-content: center;
-  align-items: center;
 }
 .my-img img {
-  width: 400px;
-  height: 564.0978px;
+  max-width:400px;
+  min-width:200px;
+  width: 100%;/*400px;*/
+  /*height: 564.0978px;*/
 }
 
 .about-me {
   grid-area: content;
 }
 .about-me {
-  margin-top: 100px;
-  margin-left: 30px;
-  margin-right: 30px;
+  width:95%;
+  margin-top: 125px;
+  margin-bottom: 60px;
+  margin-left: -5%;/*-30px;*/
+  margin-right: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
   /*margin-bottom: 100px;*/
-  width:650px;
   color: #303036; /*Jet Black*/
+}
+@media all and (max-width: 972px)
+{
+  .about-me {
+    margin-left: -7%;
+  }
 }
 .about-me a {
   color: #67BDE0;
@@ -516,20 +529,14 @@ canvas{
 }
 /*End of the contact page's CSS code.*/
 
-/*This portion of CSS code is for styling the footer section's content.*/
-.footer {
-  grid-area: footer;
-}
-/*End of the work section's CSS code.*/
-
 /*This portion of CSS code is for styling the about me page grid container.*/
 .about-grid {
   display: grid;
   grid-template-areas:
-    'header header header header header header'
-    'img img img content content content'
-    'footer footer footer footer footer footer';
-  grid-gap: 20px;
+    ' header header'
+    ' img content'
+    ' footer footer';
+  grid-gap: 0px;
 }
 /*End of about me page grid container's CSS code.*/
 
