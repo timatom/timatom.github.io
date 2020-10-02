@@ -158,6 +158,9 @@
      position:absolute;
      /*top:24px;*/
    }
+   .about-me .title {
+     padding-bottom: 20px;
+   }
 
    /*End of the about section's CSS code.*/
 

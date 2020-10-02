@@ -1,0 +1,100 @@
+/*This portion of CSS code is for styling the about pages's content.*/
+.my-img {
+  /*grid-area: img;*/
+  float:left;
+}
+.my-img {
+  margin-top: 0px;
+  margin-bottom: 30px;
+  margin-left: 60px;
+  margin-right: 60px;
+  padding:0px;
+  /*margin-right: 30px;*/
+}
+.my-img {
+  /*display: grid;*/
+  color: #303036; /*Jet Black*/
+  /*background-color: darkgrey;*/
+}
+.my-img img {
+  width:400px;
+  /*height: 564.0978px;*/
+}
+@media all and (max-width: 900px)
+{
+  .my-img {
+    margin-top: 0px;
+    margin-bottom: 15px;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding:0px;
+    /*margin-right: 30px;*/
+  }
+  .my-img img {
+    width:350px;
+  }
+}
+@media all and (max-width: 700px)
+{
+  .my-img img {
+    width:300px;
+  }
+}
+@media all and (max-width: 600px)
+{
+  .my-img img {
+    width:250px;
+  }
+}
+@media all and (max-width: 500px)
+{
+  .my-img img {
+    width:200px;
+  }
+}
+@media all and (max-width: 400px)
+{
+  .my-img {
+    margin-top: -15px;
+    margin-left: 30px;
+  }
+  .my-img img {
+    width:99%;
+  }
+}
+
+
+.about-me {
+  float:none;
+}
+.about-me {
+  margin-top: 120px;
+  margin-bottom: 30px;
+  margin-left: 60px;
+  margin-right: 60px;
+  padding-left: 0px;
+  padding-right: 0px;
+  /*margin-bottom: 100px;*/
+  color: #303036; /*Jet Black*/
+}
+@media all and (max-width: 900px)
+{
+  .about-me {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}
+.about-me a {
+  color: #67BDE0;
+}
+.about-me .title {
+  font-family:helv-r;
+  font-size: 25px;
+  font-weight:bold;
+}
+.about-me .body {
+  font-family:eaves-r;
+  font-size: 20px;
+  font-weight: 500;
+}
+/*End of the about page's CSS code.*/
