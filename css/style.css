@@ -13,13 +13,6 @@
 /*End of the custom font's CSS code.*/
 
 /*This portion of CSS code is for styling the navigation bar in the header.*/
-.menu-wrap {
-  display:none;
-}
-
-.nav {
-  /*grid-area: header;*/
-}
 
 /* Style the top navigation bar */
 .nav {
@@ -84,16 +77,21 @@
 
 .logo {
   float: left;
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
+  display:inline-block;
+  left:0px;
+  margin:-15px;
+  /*display: table-cell;*/
+  /*vertical-align: middle;
+  text-align: center;*/
 }
 
-.logo img{
+.logo a img{
   height:45px;
 }
 
-.logo a{
+.logo a.name{
+  margin-left:-10px;
+  margin-top:12px;
   font-family: times;
   font-weight: bold;
   font-size: 18px;/*20px;*/
@@ -102,7 +100,7 @@
 }
 
 /* Change color on hover */
-.logo a:hover {
+.logo a .name:hover {
   color: #565661; /*Davys Grey*/
 }
 
@@ -112,9 +110,6 @@ ion-icon {
 /*End of the navigation bar's CSS code.*/
 
 /*This portion of CSS code is for styling the hero's content section.*/
-.hero{
-  grid-area: hero;
-}
 .hero {
   margin-right:30px;
   margin-top: 13em;
@@ -415,15 +410,6 @@ canvas{
   width:100%;
 }
 
-ion-icon {
-  font-size: 32px;
-}
-@media all and (max-width:368px)
-{
-  ion-icon {
-    display:none;
-  }
-}
 .accordian-link .arrow-up {
   padding: 0px;
   display: none;
@@ -471,25 +457,7 @@ ion-icon {
 .accordian-item:target .accordian-link .arrow-up {
   display: block;
 }
-.email {
-  grid-area: email;
-}
-.email {
-  margin-top:60px;
-  margin-left:-200px;
-}
 /*End of the contact page's CSS code.*/
-
-/*This portion of CSS code is for styling the about me page grid container.*/
-.about-grid {
-  display: grid;
-  grid-template-areas:
-    ' header header'
-    ' img content'
-    ' footer footer';
-  grid-gap: 0px;
-}
-/*End of about me page grid container's CSS code.*/
 
 /*This portion of CSS code is for styling the contact page grid container.*/
 /*End of contact page grid container's CSS code.*/

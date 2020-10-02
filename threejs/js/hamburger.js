@@ -1,8 +1,7 @@
-function myFunction() {
-  var x = document.getElementById("mynav");
-  if (x.className === "nav") {
-    x.className += " responsive";
-  } else {
-    x.className = "nav";
+function Toggle() {
+  var x = document.getElementById("toggle");
+  if (x.checked === true)
+  {
+    x.checked = false;
   }
 }

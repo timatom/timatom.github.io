@@ -5,9 +5,11 @@
 <!-- This is the simulation code-->
 <script src="../threejs/three/build/three.min.js"></script>
 <script defer src="../threejs/js/main-sa.js"></script>
+<script defer src="../threejs/js/hamburger.js"></script>
 <!-- End of simulation code-->
 <meta charset="utf-8">
 <link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/footer.css">
 <link rel="stylesheet" href="../css/style-800-width.css">
 <link rel="stylesheet" href="../css/style-620-width.css">
 <link rel="stylesheet" href="../css/style-374-width.css">
@@ -16,15 +18,15 @@
 </head>
 <body>
   <div class="menu-wrap">
-    <input type="checkbox" class="toggler">
+    <input type="checkbox" class="toggler" id="toggle">
     <div class="hamburger"><div></div></div>
     <div class="menu">
       <div>
         <div>
           <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#work">Work</a></li>
-            <li><a class="button" href="/contact.html">Contact</a></li>
+            <li><a onclick="Toggle()" href="/#about">About</a></li>
+            <li><a onclick="Toggle()" href="/#work">Work</a></li>
+            <li><a onclick="Toggle()" class="button" href="/contact.html">Contact</a></li>
           </ul>
         </div>
       </div>
@@ -32,8 +34,10 @@
   </div>
   <div class="nav">
     <div class="logo">
-        <img src="/images/logo.png"></img>
-        <a href="/">Timothy Rollings</a>
+        <a class="name" href="/">Timothy Rollings</a>
+        <a href="/">
+          <img src="/images/logo.png"></img>
+        </a>
     </div>
     <div class="menu-expanded">
       <a class="button" href="/contact.html">Contact</a>
@@ -85,6 +89,15 @@
           thanks to funding by the<br>National Science Foundation.</br></p>
       </div>
     </div>
-  <!--<div class="footer">Footer</div>-->
+  <div class="footer">
+    <div class="connect">
+      Connect:
+      <a href="https://www.linkedin.com/in/timothyrollings/"><ion-icon name="logo-linkedin"></ion-icon></a>
+      <a href="/contact.html"><ion-icon name="mail-outline"></ion-icon></a>
+      <!--<a href=""><ion-icon name="logo-twitter"></ion-icon></a>-->
+    </div>
+    <p>Copyright © Timothy Rollings</p>
+  </div>
+  <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
 </body>
 </html>
