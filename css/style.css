@@ -23,6 +23,7 @@
 
 /* Style the top navigation bar */
 .nav {
+  z-index:3;
   top:0;
   position: fixed; /*Helps keep the navigation bar fixed throughout */
   width: 100%;
@@ -265,7 +266,7 @@ ion-icon {
 .my-img {
   width:70%;
   margin-top: 125px;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
   margin-left: 10%;/*60px;*/
   margin-right: 0px;
   padding:0px;
@@ -282,6 +283,15 @@ ion-icon {
   width: 100%;/*400px;*/
   /*height: 564.0978px;*/
 }
+@media all and (max-width: 650px)
+{
+  .my-img {
+    display:none;
+  }
+  .my-img img {
+    display:none;
+  }
+}
 
 .about-me {
   grid-area: content;
@@ -289,7 +299,7 @@ ion-icon {
 .about-me {
   width:95%;
   margin-top: 125px;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
   margin-left: -5%;/*-30px;*/
   margin-right: 0px;
   padding-left: 0px;
@@ -297,10 +307,77 @@ ion-icon {
   /*margin-bottom: 100px;*/
   color: #303036; /*Jet Black*/
 }
+@media all and (max-width: 1448px)
+{
+  .about-me {
+    margin-bottom: 2.8%;/*30px;*/
+  }
+}
+@media all and (max-width: 1288px)
+{
+  .about-me {
+    margin-bottom: 2.5%;/*30px;*/
+  }
+}
+@media all and (max-width: 3000px)
+{
+  .about-me {
+    margin-left: -1.5%;
+  }
+}
+@media all and (max-width: 2500px)
+{
+  .about-me {
+    margin-left: -2%;
+  }
+}
+@media all and (max-width: 2000px)
+{
+  .about-me {
+    margin-left: -3%;
+  }
+}
+@media all and (max-width: 1500px)
+{
+  .about-me {
+    margin-left: -4.5%;
+  }
+}
+@media all and (max-width: 1200px)
+{
+  .about-me {
+    margin-left: -6.5%;
+  }
+}
 @media all and (max-width: 972px)
 {
   .about-me {
-    margin-left: -7%;
+    margin-left: -8%;
+  }
+}
+@media all and (max-width: 800px)
+{
+  .about-me {
+    margin-left: -13%;
+  }
+}
+@media all and (max-width: 800px)
+{
+  .about-me {
+    margin-left: -13%;
+  }
+}
+@media all and (max-width: 800px)
+{
+  .about-me {
+    margin-left: -13%;
+  }
+}
+@media all and (max-width: 650px)
+{
+  .about-me {
+    margin-left: 30px;
+    padding-right: 30px;
   }
 }
 .about-me a {
@@ -421,7 +498,6 @@ canvas{
   width:99%;
 }
 .faqs {
-  z-index:-3;
   margin-top: 30px;
   margin-left: 15%;
   margin-right: 15%;
@@ -457,7 +533,6 @@ canvas{
   border: 1px solid #A9A9B2;
 }
 .accordian-link {
-  z-index:-3;
   padding:10px;
   color: #303036; /*Jet Black*/
   font-family:helv-r;
@@ -470,8 +545,22 @@ canvas{
   justify-content: space-between;
 }
 
+.accordian-link .title {
+  font-size: 20px;
+  width:100%;
+}
+
+ion-icon {
+  font-size: 32px;
+}
+@media all and (max-width:368px)
+{
+  ion-icon {
+    display:none;
+  }
+}
 .accordian-link .arrow-up {
-  z-index:-3;
+  padding: 0px;
   display: none;
 }
 /*.answer {
@@ -481,7 +570,6 @@ canvas{
   font-weight: 500;
 }*/
 .answer {
-  z-index:-3;
   padding-left:10px;
   max-height: 0;
   overflow: hidden;
@@ -513,11 +601,9 @@ canvas{
   max-height:80rem;
 }
 .accordian-item:target .accordian-link .arrow-down {
-  z-index:-3;
   display: none;
 }
 .accordian-item:target .accordian-link .arrow-up {
-  z-index:-3;
   display: block;
 }
 .email {
