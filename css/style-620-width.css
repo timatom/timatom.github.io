@@ -54,8 +54,9 @@
      /*background-color: lightblue;*/ /*For debugging layout*/
    }
    .hero h1{
-     width:100%;
+     width:99%;
      text-align:left;
+     margin-right:30px;
      /*background-color: lightblue;*/
      font-family:helv-r;
      font-size: 39.06px;
@@ -63,9 +64,10 @@
    }
    .hero p{
      margin:0px;
+     padding-right:30px;
      padding-top:15px;
      padding-bottom:15px;
-     width:100%;
+     width:99%;
      text-align:left;
      /*background-color: lightblue;*/
      font-family:eaves-r;
@@ -90,10 +92,6 @@
    /*End of hero's CSS code.*/
 
    /*This portion of CSS code is for styling the about section's content.*/
-   .about
-   {
-     grid-area: about;
-   }
    .about
    {
      z-index:-5;
@@ -166,9 +164,6 @@
 
    /*This portion of CSS code is for styling the work section's content.*/
    .work {
-     grid-area: work;
-   }
-   .work {
      z-index:-1;
      margin:0px;
      margin-top: 12em;
@@ -232,12 +227,6 @@
      padding:0 5px;
      position:absolute;
      top:0px;
-   }
-   /*End of the work section's CSS code.*/
-
-   /*This portion of CSS code is for styling the footer section's content.*/
-   .footer {
-     grid-area: footer;
    }
    /*End of the work section's CSS code.*/
 

@@ -116,6 +116,7 @@ ion-icon {
   grid-area: hero;
 }
 .hero {
+  margin-right:30px;
   margin-top: 13em;
   margin-bottom: 13em;
   margin-left: 12%;
