@@ -23,6 +23,12 @@ var trans_x = 0;
 var trans_y = 0;
 var color = '';
 
+if (screen.width <= 2560 && screen.width > 1440) {
+  scale = 14;
+  trans_x = 1.5;
+  trans_y = 50;
+  var color = 'rgba(103, 189, 224, 0.1)';//'rgba(48, 48, 54, 0.05)';
+}
 if (screen.width <= 1440 && screen.width > 800) {
   scale = 10;
   trans_x = 1.5;

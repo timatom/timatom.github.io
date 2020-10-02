@@ -123,6 +123,12 @@ ion-icon {
   justify-content: middle;
   align-items: middle;
 }
+@media all and (max-width: 888px)
+{
+  .hero {
+    margin-top: 11em;
+  }
+}
 .hero {
   display:block;
   color: #303036; /*Jet Black*/
@@ -305,7 +311,7 @@ ion-icon {
 }
 .work {
   margin-top: 5%;
-  margin-bottom: 5%;
+  margin-bottom: 3%;
   margin-left: 12%;
   width: 70%;
   /*background-color: lightgrey;*/
@@ -377,9 +383,6 @@ canvas{
 
 /*This portion of CSS code is for styling the contact page's content*/
 .intro {
-  grid-area: disc;
-}
-.intro {
   margin-top: 120px;
   margin-left: 7.32%;
   margin-right: 7.32%;
@@ -405,9 +408,7 @@ canvas{
   width:99%;
 }
 .faqs {
-  grid-area: FAQs;
-}
-.faqs {
+  z-index:-3;
   margin-top: 30px;
   margin-left: 15%;
   margin-right: 15%;
@@ -443,6 +444,7 @@ canvas{
   border: 1px solid #A9A9B2;
 }
 .accordian-link {
+  z-index:-3;
   padding:10px;
   color: #303036; /*Jet Black*/
   font-family:helv-r;
@@ -456,6 +458,7 @@ canvas{
 }
 
 .accordian-link .arrow-up {
+  z-index:-3;
   display: none;
 }
 /*.answer {
@@ -465,6 +468,7 @@ canvas{
   font-weight: 500;
 }*/
 .answer {
+  z-index:-3;
   padding-left:10px;
   max-height: 0;
   overflow: hidden;
@@ -484,20 +488,23 @@ canvas{
 }
 .answer p {
   font-family:eaves-r;
+  margin-bottom:15px;
   font-size: 20px;
   font-weight: 500;
   color: #303036; /*Jet Black*/
 }
 .accordian-item:target .answer {
-  max-height:50rem;
+  max-height:80rem;
 }
 .final-accordian-item:target .answer {
-  max-height:50rem;
+  max-height:80rem;
 }
 .accordian-item:target .accordian-link .arrow-down {
+  z-index:-3;
   display: none;
 }
 .accordian-item:target .accordian-link .arrow-up {
+  z-index:-3;
   display: block;
 }
 .email {
@@ -527,16 +534,6 @@ canvas{
 /*End of about me page grid container's CSS code.*/
 
 /*This portion of CSS code is for styling the contact page grid container.*/
-/*.contact-grid {
-  display: grid;
-  grid-template-areas:
-    'header header header header'
-    'disc disc disc disc'
-    'FAQs FAQs FAQs FAQs'
-    'email' 'email' 'email' 'email'
-    'footer footer footer footer';
-  grid-gap: 20px;
-}*/
 /*End of contact page grid container's CSS code.*/
 
 /* Misc. CSS code used in several parts of the website, such as buttons, */
