@@ -84,6 +84,12 @@
     margin-right: 30px;
   }
 }
+@media all and (max-width: 620px)
+{
+  .about-me .body p{
+    margin-bottom:15px;
+  }
+}
 .about-me a {
   color: #67BDE0;
 }
