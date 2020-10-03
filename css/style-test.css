@@ -1,0 +1,11 @@
+/*This portion of CSS code is for styling the simulation content.*/
+#c {
+  width:1366px;
+  height: 627px;
+}
+canvas {
+  width:1366px;
+  height: 627px;
+  background: white;
+}
+/*End of simulation's CSS code.*/
