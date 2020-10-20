@@ -1,0 +1,404 @@
+/*This portion of CSS code is for custom fonts.*/
+@font-face {
+  src: url(../fonts/helvetica-lt-55-roman.ttf);
+  font-family: helv-r;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  src: url(../fonts/mrseavesroman.ttf);
+  font-family: eaves-r;
+}
+/*End of the custom font's CSS code.*/
+
+/*This portion of CSS code is for styling the hero's content section.*/
+.hero
+{
+  margin-top: 30vh;
+  padding-bottom: 70vh;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 100%;
+  /*background-color: lightblue;*/ /*For debugging layout*/
+}
+.hero {
+  display:block;
+  color: #303036; /*Jet Black*/
+  /*background-color: lightgrey;*/
+  justify-content: center;
+  align-items: center;
+}
+.hero h1{
+  width:100%;
+  text-align:left;
+  /*background-color: lightblue;*/
+  font-family:helv-r;
+  font-size: 39.06px;
+  font-weight:bold;
+}
+.hero p{
+  padding:0px;
+  padding-top:15px;
+  padding-bottom:15px;
+  width:100%;
+  text-align:left;
+  /*background-color: lightblue;*/
+  font-family:eaves-r;
+  font-size: 25px;
+}
+.action {
+}
+.hero .button{
+  padding:0px;
+  margin:0px;
+  width:175px;
+  height:50px;
+  display: inline-block;
+  line-height:50px;
+  text-align: center;
+  background-color: #1C1C1E; /*Eerie Black*/
+  font-family: helv-r;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #F5F5F5; /*Cultured White*/
+}
+/*End of hero's CSS code.*/
+
+/*Responsive styling for hero section*/
+@media all and (min-width: 662px)
+{
+  .hero {
+    padding-left: 12%;
+    padding-right:30px;
+    margin-top: 30vh;
+    width: 62%;
+    /*background-color: lightblue;*/ /*For debugging layout*/
+    justify-content: middle;
+    align-items: middle;
+  }
+  .hero p{
+    width:78%;
+  }
+  .action {
+  }
+}
+@media all and (min-height: 400px)
+{
+  .hero
+  {
+    margin-top: 25vh;
+  }
+}
+@media all and (min-height: 500px)
+{
+  .hero
+  {
+    margin-top: 20vh;
+  }
+  @media all and (min-width: 361px)
+  {
+    .hero
+    {
+      margin-top: 25vh;
+    }
+  }
+  @media all and (min-width: 567px)
+  {
+    .hero
+    {
+      margin-top: 30vh;
+    }
+  }
+  @media all and (min-width: 662px)
+  {
+    .hero
+    {
+      margin-top: 20vh;
+    }
+  }
+  @media all and (min-width: 822px)
+  {
+    .hero
+    {
+      margin-top: 25vh;
+    }
+  }
+  @media all and (min-width: 1359px)
+  {
+    .hero
+    {
+      margin-top: 30vh;
+    }
+  }
+}
+@media all and (min-height: 600px)
+{
+  .hero
+  {
+    margin-top: 17vh;
+  }
+  @media all and (min-width: 323px)
+  {
+    .hero
+    {
+      margin-top: 19vh;
+    }
+  }
+  @media all and (min-width: 351px)
+  {
+    .hero
+    {
+      margin-top: 23vh;
+    }
+  }
+  @media all and (min-width: 361px)
+  {
+    .hero
+    {
+      margin-top: 29vh;
+    }
+  }
+  @media all and (min-width: 567px)
+  {
+    .hero
+    {
+      margin-top: 33vh;
+    }
+  }
+  @media all and (min-width: 662px)
+  {
+    .hero
+    {
+      margin-top: 24vh;
+    }
+  }
+  @media all and (min-width: 733px)
+  {
+    .hero
+    {
+      margin-top: 26vh;
+    }
+  }
+  @media all and (min-width: 822px)
+  {
+    .hero
+    {
+      margin-top: 29vh;
+    }
+  }
+  @media all and (min-width: 1359px)
+  {
+    .hero
+    {
+      margin-top: 34vh;
+    }
+  }
+}
+@media all and (min-height: 750px)
+{
+  .hero
+  {
+    margin-top: 23vh;
+  }
+  @media all and (min-width: 351px)
+  {
+    .hero
+    {
+      margin-top: 27vh;
+    }
+  }
+  @media all and (min-width: 361px)
+  {
+    .hero
+    {
+      margin-top: 33vh;
+    }
+  }
+  @media all and (min-width: 567px)
+  {
+    .hero
+    {
+      margin-top: 36vh;
+    }
+  }
+  @media all and (min-width: 662px)
+  {
+    .hero
+    {
+      margin-top: 29vh;
+    }
+  }
+  @media all and (min-width: 822px)
+  {
+    .hero
+    {
+      margin-top: 32vh;
+    }
+  }
+  @media all and (min-width: 1359px)
+  {
+    .hero
+    {
+      margin-top: 38vh;
+    }
+  }
+}
+@media all and (min-height: 800px)
+{
+  .hero
+  {
+    margin-top: 19vh;
+  }
+  @media all and (min-width: 351px)
+  {
+    .hero
+    {
+      margin-top: 28vh;
+    }
+  }
+  @media all and (min-width: 361px)
+  {
+    .hero
+    {
+      margin-top: 34vh;
+    }
+  }
+  @media all and (min-width: 567px)
+  {
+    .hero
+    {
+      margin-top: 37vh;
+    }
+  }
+  @media all and (min-width: 662px)
+  {
+    .hero
+    {
+      margin-top: 30vh;
+    }
+  }
+  @media all and (min-width: 822px)
+  {
+    .hero
+    {
+      margin-top: 33vh;
+    }
+  }
+  @media all and (min-width: 1359px)
+  {
+    .hero
+    {
+      margin-top: 39vh;
+    }
+  }
+}
+@media all and (min-height: 900px)
+{
+  .hero
+  {
+    margin-top: 25vh;
+  }
+  @media all and (min-width: 351px)
+  {
+    .hero {
+      margin-top: 30vh;
+    }
+  }
+  @media all and (min-width: 361px)
+  {
+    .hero {
+      margin-top: 35vh;
+    }
+  }
+  @media all and (min-width: 567px)
+  {
+    .hero {
+      margin-top: 39vh;
+    }
+  }
+  @media all and (min-width: 662px)
+  {
+    .hero {
+      margin-top: 32vh;
+    }
+  }
+  @media all and (min-width: 822px)
+  {
+    .hero {
+      margin-top: 35vh;
+    }
+  }
+  @media all and (min-width: 1359px)
+  {
+    .hero {
+      margin-top: 39vh;
+    }
+  }
+}
+@media all and (min-height: 1000px)
+{
+  .hero
+  {
+    margin-top: 29vh;
+  }
+  @media all and (min-width: 351px)
+  {
+    .hero
+    {
+      margin-top: 33vh;
+    }
+  }
+  @media all and (min-width: 361px)
+  {
+    .hero
+    {
+      margin-top: 37vh;
+    }
+  }
+  @media all and (min-width: 567px)
+  {
+    .hero
+    {
+      margin-top: 40vh;
+    }
+  }
+  @media all and (min-width: 662px)
+  {
+    .hero
+    {
+      margin-top: 33vh;
+    }
+  }
+  @media all and (min-width: 822px)
+  {
+    .hero
+    {
+      margin-top: 38vh;
+    }
+  }
+  @media all and (min-width: 1359px)
+  {
+    .hero
+    {
+      margin-top: 40vh;
+    }
+  }
+  @media all and (min-width: px)
+  {
+    .hero
+    {
+      margin-top: vh;
+    }
+  }
+  @media all and (min-width: px)
+  {
+    .hero
+    {
+      margin-top: vh;
+    }
+  }
+}
+/*End of the responsive styling for hero section*/

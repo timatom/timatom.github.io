@@ -1,0 +1,340 @@
+/*This portion of CSS code is for custom fonts.*/
+@font-face {
+  src: url(../fonts/helvetica-lt-55-roman.ttf);
+  font-family: helv-r;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  src: url(../fonts/mrseavesroman.ttf);
+  font-family: eaves-r;
+}
+/*End of the custom font's CSS code.*/
+
+/*This portion of CSS code is for styling the about section's content.*/
+.about
+{
+  z-index:-5;
+  padding-bottom: 70vh;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 100%;
+  /*background-color: lightblue;*/ /*For debugging layout*/
+}
+.about a
+{
+  color: #67BDE0;
+}
+.about .text
+{
+  width:100%;
+  color: #303036; /*Jet Black*/
+}
+.about h1
+{
+  font-family:helv-r;
+  font-size: 25px;
+  font-weight:bold;
+}
+.about p
+{
+  font-family:eaves-r;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.about .button
+{
+  width:250px;
+  height:50px;
+  display: inline-block;
+  line-height:50px;
+  text-align: center;
+  background-color: #1C1C1E;
+  font-family: helv-r;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #F5F5F5;
+}
+/* Style :target with padding & transition. The 's' can be changed to */
+/* whatever works (I used it here to represent 'sections'). Adjust */
+/* transition speed to .001s for instantaneous. */
+.about:target {
+  padding-top:-25vh;
+  padding-top:25vh;
+}
+/* Add 'Currently Reading' to targeted section (optional) */
+.about:target:before {
+  background-clip:padding-box;
+  padding:0 5px;
+  position:absolute;
+  /*top:24px;*/
+}
+
+/*End of the about section's CSS code.*/
+
+@media all and (min-width: 662px)
+{
+  /*This portion of CSS code is for styling the about section's content.*/
+  .about {
+    grid-area: about;
+  }
+  .about {
+    padding-left: 12%;
+    width: 65%;
+    /*background-color: lightgreen;*/ /*For debugging layout*/
+    justify-content: middle;
+    align-items: middle;
+  }
+  .about a {
+    color: #67BDE0;
+  }
+  .about .text {
+    color: #303036; /*Jet Black*/
+  }
+  .about h1 {
+    font-family:helv-r;
+    font-size: 25px;
+    font-weight:bold;
+    padding:0;
+    padding:0;
+  }
+  .about p {
+    padding:0;
+    padding:0;
+    padding-top:15px;
+    padding-bottom:15px;
+    font-family:eaves-r;
+    padding-right: 16.98%;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .about .button{
+    width:250px;
+    height:50px;
+    display: inline-block;
+    line-height:50px;
+    text-align: center;
+    background-color: #1C1C1E;
+    font-family: helv-r;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #F5F5F5;
+  }
+}
+@media all and (min-height: 500px)
+{
+  .about:target {
+    padding-top:-20vh;
+    padding-top:20vh;
+  }
+}
+@media all and (min-height: 600px)
+{
+  .about:target {
+    padding-top:-15vh;
+    padding-top:15vh;
+  }
+}
+@media all and (min-height: 700px)
+{
+  @media all and (min-width: 1500px)
+  {
+    .about:target
+    {
+      padding-top:-23vh;
+      padding-top:23vh;
+    }
+  }
+  @media all and (min-width: 2000px)
+  {
+    .about:target
+    {
+      padding-top:-25vh;
+      padding-top:25vh;
+    }
+  }
+}
+@media all and (min-height: 800px)
+{
+  .about:target {
+    padding-top:-12vh;
+    padding-top:12vh;
+  }
+  @media all and (min-width: 500px)
+  {
+    .about:target
+    {
+      padding-top:-17vh;
+      padding-top:17vh;
+    }
+  }
+  @media all and (min-width: 600px)
+  {
+    .about:target
+    {
+      padding-top:-20vh;
+      padding-top:20vh;
+    }
+  }
+  @media all and (min-width: 662px)
+  {
+    .about:target
+    {
+      padding-top:-15vh;
+      padding-top:15vh;
+    }
+  }
+  @media all and (min-width: 800px)
+  {
+    .about:target
+    {
+      padding-top:-10vh;
+      padding-top:10vh;
+    }
+  }
+  @media all and (min-width: 900px)
+  {
+    .about:target
+    {
+      padding-top:-13vh;
+      padding-top:13vh;
+    }
+  }
+  @media all and (min-width: 1000px)
+  {
+    .about:target
+    {
+      padding-top:-17vh;
+      padding-top:17vh;
+    }
+  }
+  @media all and (min-width: 1100px)
+  {
+    .about:target
+    {
+      padding-top:-18vh;
+      padding-top:18vh;
+    }
+  }
+  @media all and (min-width: 1300px)
+  {
+    .about:target
+    {
+      padding-top:-20vh;
+      padding-top:20vh;
+    }
+  }
+  @media all and (min-width: 1500px)
+  {
+    .about:target
+    {
+      padding-top:-25vh;
+      padding-top:25vh;
+    }
+  }
+  @media all and (min-width: 2000px)
+  {
+    .about:target
+    {
+      padding-top:-30vh;
+      padding-top:30vh;
+    }
+  }
+}
+@media all and (min-height: 900px)
+{
+  .about:target {
+    padding-top:-10vh;
+    padding-top:10vh;
+  }
+  @media all and (min-width: 500px)
+  {
+    .about:target
+    {
+      padding-top:-20vh;
+      padding-top:20vh;
+    }
+  }
+  @media all and (min-width: 600px)
+  {
+    .about:target
+    {
+      padding-top:-23vh;
+      padding-top:23vh;
+    }
+  }
+  @media all and (min-width: 661px)
+  {
+    .about:target
+    {
+      padding-top:-25vh;
+      padding-top:25vh;
+    }
+  }
+  @media all and (min-width: 800px)
+  {
+    .about:target
+    {
+      padding-top:-13vh;
+      padding-top:13vh;
+    }
+  }
+  @media all and (min-width: 900px)
+  {
+    .about:target
+    {
+      padding-top:-15vh;
+      padding-top:15vh;
+    }
+  }
+  @media all and (min-width: 1000px)
+  {
+    .about:target
+    {
+      padding-top:-20vh;
+      padding-top:20vh;
+    }
+  }
+  @media all and (min-width: 1100px)
+  {
+    .about:target
+    {
+      padding-top:-21vh;
+      padding-top:21vh;
+    }
+  }
+  @media all and (min-width: 1300px)
+  {
+    .about:target
+    {
+      padding-top:-23vh;
+      padding-top:23vh;
+    }
+  }
+  @media all and (min-width: 1500px)
+  {
+    .about:target
+    {
+      padding-top:-28vh;
+      padding-top:28vh;
+    }
+  }
+  @media all and (min-width: 2000px)
+  {
+    .about:target
+    {
+      padding-top:-33vh;
+      padding-top:33vh;
+    }
+  }
+}
+
+  /*End of the about section's CSS code.*/
+}

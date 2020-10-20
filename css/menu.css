@@ -2,7 +2,7 @@
   display:none;
 }
 
-@media all and (max-width: 620px)
+@media all and (max-width: 662px)
 {/* CORE STYLES */
 :root {
   --primary-color: rgba(13, 110, 139, 0.75);
@@ -11,7 +11,7 @@
 }
 
 * {
-  margin: 0;
+  padding: 0;
   padding: 0;
   box-sizing: border-box;
 }
@@ -20,8 +20,8 @@
 .menu-wrap {
   display:block;
   position: fixed;
-  top: 1px;
-  right: 0;
+  top: 3px;
+  right: 0px;
   z-index: 6;
 }
 

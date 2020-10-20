@@ -1,0 +1,144 @@
+/*This portion of CSS code is for custom fonts.*/
+@font-face {
+  src: url(../fonts/helvetica-lt-55-roman.ttf);
+  font-family: helv-r;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  src: url(../fonts/mrseavesroman.ttf);
+  font-family: eaves-r;
+}
+/*End of the custom font's CSS code.*/
+
+/* Style the top navigation bar */
+.nav {
+  z-index:3;
+  top:0;
+  position: fixed; /*Helps keep the navigation bar fixed throughout */
+  width: 100%;
+  overflow: hidden;
+  background-color: #ffffff;
+  padding-left: 15px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  /* This helps creat the shadow effects on the navigation bar. */
+  -webkit-box-shadow: 0px 2px 4px #828282;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow:    0px 2px 4px #828282;  /* Firefox 3.5 - 3.6 */
+  box-shadow:         0px 2px 4px #828282;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+
+/* Style the topnav links */
+.nav a {
+  float: right;
+  display: block;
+  color: #303036;
+  text-align: center;
+  font-family:helv-r;
+  font-size: 16px;/*16px;*/
+  padding: 0px;
+  padding-right: 15px;
+  text-decoration: none;
+  /*text-transform: uppercase;*/
+}
+
+/* Change color on hover */
+.nav a:hover {
+  color: #67BDE0;
+}
+
+.nav a {
+  float: right;
+  display: block;
+  color: #303036;
+  text-align: center;
+  font-family:helv-r;
+  font-size: 16px;/*16px;*/
+  padding: 0px;
+  padding-right: 15px;
+  text-decoration: none;
+  /*text-transform: uppercase;*/
+}
+
+.nav .menu-expanded .button{
+  margin-top: 8px;
+  padding-top:6px;
+  padding-left:30px;
+  padding-left:24px;
+  padding-right:24px;
+  float: right;
+  width:120px;
+  height:31.5px;
+  display: inline-block;
+  text-align: center;
+  background-color: #1C1C1E;
+  font-family: helv-r;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #F5F5F5;
+}
+
+.nav .menu-expanded a {
+  padding-top: 14px;
+}
+
+.nav .button:hover {
+  background-color: #67BDE0; /*Dark Sky Blue*/
+  color: #303036; /*Jet Black*/
+}
+
+.logo {
+  float: left;
+  display:inline-block;
+  left:0px;
+  padding:0px;
+  /*display: table-cell;*/
+  /*vertical-align: middle;
+  text-align: center;*/
+}
+
+.logo a img{
+  height:45px;
+}
+
+.logo a.name{
+  padding-left:-10px;
+  padding-top:13px;
+  font-family: times;
+  font-weight: bold;
+  font-size: 18px;/*20px;*/
+  color: #565661; /*Davys Grey*/
+  text-transform: uppercase;
+}
+
+/* Change color on hover */
+.logo a .name:hover {
+  color: #565661; /*Davys Grey*/
+}
+
+@media all and (max-width: 662px)
+{
+  .nav .menu-expanded a
+  {
+    display: none;
+  }
+  .nav .menu-expanded .button
+  {
+    display: none;
+  }
+}
+
+@media all and (max-width: 350px)
+{
+  .logo a.name{
+    display:none;
+  }
+}
+
+@media all and (min-width: 800px)
+{
+}

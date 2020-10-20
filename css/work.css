@@ -1,0 +1,125 @@
+/*This portion of CSS code is for custom fonts.*/
+@font-face {
+  src: url(../fonts/helvetica-lt-55-roman.ttf);
+  font-family: helv-r;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  src: url(../fonts/mrseavesroman.ttf);
+  font-family: eaves-r;
+}
+/*End of the custom font's CSS code.*/
+
+/*This portion of CSS code is for styling the work section's content.*/
+.work {
+  z-index:-1;
+  padding:0px;
+  padding-left: 30px;
+  padding-right:30px;
+  width: 100%;
+  /*background-color: lightblue;*/
+}
+.work a {
+  color: #67BDE0;
+}
+.work .text {
+  width:100%;
+  color: #303036; /*Jet Black*/
+}
+.work h1 {
+  width:100%;
+  font-family:helv-r;
+  font-size: 25px;
+  font-weight:bold;
+}
+.work p {
+  padding-top: 15px;
+  padding-bottom: 30px;
+  font-family:eaves-r;
+  font-size: 20px;
+  font-weight: 500;
+}
+.work br {
+  padding:0px;
+  padding:0px;
+}
+/* Style :target with padding & transition. The 's' can be changed to */
+/* whatever works (I used it here to represent 'sections'). Adjust */
+/* transition speed to .001s for instantaneous. */
+.work:target
+{
+  padding-top:-25vh;
+  padding-top:25vh;
+}
+
+/* Add 'Currently Reading' to targeted section (optional) */
+.work:target:before {
+  background-clip:padding-box;
+  padding:0 5px;
+  position:absolute;
+  top:0px;
+}
+/*End of the work section's CSS code.*/
+
+@media all and (min-width: 662px)
+{
+  /*This portion of CSS code is for styling the work section's content.*/
+  .work {
+    grid-area: work;
+  }
+  .work {
+    padding-left: 12%;
+    width: 70%;
+    /*background-color: lightgrey;*/
+    justify-content: middle;
+    align-items: middle;
+  }
+  .work a {
+    color: #67BDE0;
+  }
+  .work .text {
+    color: #303036; /*Jet Black*/
+  }
+  .work h1 {
+    font-family:helv-r;
+    font-size: 25px;
+    font-weight:bold;
+    padding:0;
+    padding: 0;
+  }
+  .work p {
+    padding:0;
+    padding: 0;
+    padding-right: 20%;
+    font-family:eaves-r;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .work p{
+    padding-top: 15px;
+    padding-bottom: 30px;
+  }
+  /* Style :target with padding & transition. The 's' can be changed to */
+  /* whatever works (I used it here to represent 'sections'). Adjust */
+  /* transition speed to .001s for instantaneous. */
+  .work:target {
+    padding-top: -22vh;
+    padding-top: 22vh;
+  }
+}
+@media all and (min-height: 400)
+{
+  .work:target {
+    padding-top: -10vh;
+    padding-top: 10vh;
+  }
+}
+@media all and (min-height: 600)
+{
+  .work:target {
+    padding-top: -5vh;
+    padding-top: 5vh;
+  }
+}
