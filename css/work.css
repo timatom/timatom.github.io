@@ -59,7 +59,6 @@
   background-clip:padding-box;
   padding:0 5px;
   position:absolute;
-  top:0px;
 }
 /*End of the work section's CSS code.*/
 
@@ -109,17 +108,235 @@
     padding-top: 22vh;
   }
 }
-@media all and (min-height: 400)
+
+@media all and (min-width: 700px)
 {
   .work:target {
-    padding-top: -10vh;
-    padding-top: 10vh;
+    padding-top: -25vh;
+    padding-top: 25vh;
   }
 }
-@media all and (min-height: 600)
+
+@media all and (min-height: 400px)
 {
   .work:target {
-    padding-top: -5vh;
-    padding-top: 5vh;
+    padding-top: -23vh;
+    padding-top: 23vh;
+  }
+}
+@media all and (min-height: 500px)
+{
+  .work:target {
+    padding-top: -19vh;
+    padding-top: 19vh;
+  }
+  @media all and (min-width: 1700px)
+  {
+    .work:target {
+      padding-top: -20vh;
+      padding-top: 20vh;
+    }
+  }
+  @media all and (min-width: 1899px)
+  {
+    .work:target {
+      padding-top: -23vh;
+      padding-top: 23vh;
+    }
+  }
+}
+@media all and (min-height: 600px)
+{
+  .work:target {
+    padding-top: -16vh;
+    padding-top: 16vh;
+  }
+  @media all and (min-width: 600px)
+  {
+    .work:target {
+      padding-top: -19vh;
+      padding-top: 19vh;
+    }
+  }
+  @media all and (min-width: 1300px)
+  {
+    .work:target {
+      padding-top: -20vh;
+      padding-top: 20vh;
+    }
+  }
+  @media all and (min-width: 1400px)
+  {
+    .work:target {
+      padding-top: -24vh;
+      padding-top: 24vh;
+    }
+  }
+  @media all and (min-width: 1700px)
+  {
+    .work:target {
+      padding-top: -25.5vh;
+      padding-top: 25.5vh;
+    }
+  }
+}
+@media all and (min-height: 700px)
+{
+  .work:target {
+    padding-top: -14vh;
+    padding-top: 14vh;
+  }
+  @media all and (min-width: 437px)
+  {
+    .work:target {
+      padding-top: -20vh;
+      padding-top: 20vh;
+    }
+  }
+  @media all and (min-width: 600px)
+  {
+    .work:target {
+      padding-top: -24vh;
+      padding-top: 24vh;
+    }
+  }
+  @media all and (min-width: 662px)
+  {
+    .work:target {
+      padding-top: -15vh;
+      padding-top: 15vh;
+    }
+  }
+  @media all and (min-width: 900px)
+  {
+    .work:target {
+      padding-top: -17vh;
+      padding-top: 17vh;
+    }
+  }
+  @media all and (min-width: 993px)
+  {
+    .work:target {
+      padding-top: -22vh;
+      padding-top: 22vh;
+    }
+  }
+  @media all and (min-width: 1400px)
+  {
+    .work:target {
+      padding-top: -20vh;
+      padding-top: 20vh;
+    }
+  }
+}
+@media all and (min-height: 800px)
+{
+  .work:target {
+    padding-top: -12vh;
+    padding-top: 12vh;
+  }
+  @media all and (min-width: 400px)
+  {
+    .work:target {
+      padding-top: -16vh;
+      padding-top: 16vh;
+    }
+  }
+  @media all and (min-width: 800px)
+  {
+    .work:target {
+      padding-top: -20vh;
+      padding-top: 20vh;
+    }
+  }
+}
+@media all and (min-height: 900px)
+{
+  .work:target {
+    padding-top: -11vh;
+    padding-top: 11vh;
+  }
+  @media all and (min-width: 662px)
+  {
+    .work:target {
+      padding-top: -16vh;
+      padding-top: 16vh;
+    }
+  }
+  @media all and (min-width: 1000px)
+  {
+    .work {
+      padding-bottom: 5vh;
+    }
+  }
+  @media all and (min-width: 1400px)
+  {
+    .work {
+      padding-bottom: 10vh;
+    }
+  }
+}
+@media all and (min-height: 1000px)
+{
+  .work:target {
+    padding-top: -13vh;
+    padding-top: 13vh;
+  }
+  @media all and (min-width: 400px)
+  {
+    .work {
+      padding-bottom: 3vh;
+    }
+  }
+  @media all and (min-width: 500px)
+  {
+    .work {
+      padding-bottom: 8vh;
+    }
+  }
+  @media all and (min-width: 600px)
+  {
+    .work {
+      padding-bottom: 10vh;
+    }
+  }
+  @media all and (min-width: 662px)
+  {
+    .work:target {
+      padding-top: -19vh;
+      padding-top: 19vh;
+    }
+  }
+  @media all and (min-width: 800px)
+  {
+    .work:target {
+      padding-top: -25vh;
+      padding-top: 25vh;
+    }
+  }
+  @media all and (min-width: 900px)
+  {
+    .work:target {
+      padding-top: -28vh;
+      padding-top: 28vh;
+    }
+  }
+  @media all and (min-width: 1000px)
+  {
+    .work {
+      padding-bottom: 8vh;
+    }
+  }
+  @media all and (min-width: 1200px)
+  {
+    .work {
+      padding-bottom: 12vh;
+    }
+  }
+  @media all and (min-width: 1400px)
+  {
+    .work {
+      padding-bottom: 14vh;
+    }
   }
 }
