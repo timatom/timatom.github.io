@@ -48,7 +48,11 @@ ion-icon {
 /* Change's a button's background and text colors on hover */
 /* The same color transitions remain the same through all button'supports */
 /* on this website. */
-.button:hover {
+.about .button:hover {
+  background-color: #67BDE0; /*Dark Sky Blue*/
+  color: #303036; /*Jet Black*/
+}
+.hero .button:hover {
   background-color: #67BDE0; /*Dark Sky Blue*/
   color: #303036; /*Jet Black*/
 }
