@@ -77,6 +77,12 @@
   /*margin-bottom: 100px;*/
   color: #303036; /*Jet Black*/
 }
+.about-me .title{
+  margin-bottom:15px;
+}
+.about-me .body p{
+  margin-bottom:15px;
+}
 @media all and (max-width: 900px)
 {
   .about-me {
